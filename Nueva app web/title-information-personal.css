@@ -1,0 +1,101 @@
+.iconoTitle{
+    color: #fff;
+    font-size: 1.7em;
+}
+
+#ul-title-resumen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li-title-resumen{
+    background: #151515;
+    padding: 15px;
+    border-radius: 1.3em;
+    margin: 10px;
+}
+
+#titleElemento{
+    color: #fff;
+    list-style: none;
+    font-size: 1.3em;
+}
+
+.continerInfoUser{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: #000;
+    display: none;
+}
+
+#titleInfoUser{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.titleNombreUser{
+    color: #fff;
+}
+
+.iconFleUserback{
+    color: #fff;
+}
+
+.infoUserContent{
+    color: #fff;
+    font-weight: 100;
+    line-height: 2.4em;color: #fff;
+    font-weight: 500;
+}
+
+.contentUserSpan{
+    color: #fff;
+    font-weight: 100;
+}
+
+.flechaTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nombreusertitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4vh 1vh 8vh 1vh;
+    font-weight: 400;
+}
+
+.contenidoInformacionUser{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+}
+
+#botonSecion{
+    background: #00f;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 70px;
+    width: 90%;
+    border-radius: 1.3em;
+    margin-top: 15vh;
+}
+
+.containerBotonsecion{
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+
+.iconFleUserback{
+    font-size: 1.4em;
+    margin: 30px;
+    margin: 3vh 0 3vh 3vh;
+}
