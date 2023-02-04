@@ -1,0 +1,97 @@
+#navegation {
+    height: 12vh;
+    background: #151515;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px -1px 2px 0px #000;
+}
+
+#navegacion-ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navegation-li{
+    list-style: none;
+}
+
+.resumen-nav.active #resumenIndicador{
+    list-style: none;
+    padding: 14px;
+    background: #000;
+    border-radius: 1.3em;
+}
+
+.resumen-nav.active #resumenIndicador .icono{
+    color: #fff; 
+}
+
+.inicio-nav.active #inicioIndicador{
+    list-style: none;
+    padding: 14px;
+    background: #000;
+    border-radius: 1.3em;
+}
+
+.inicio-nav.active #inicioIndicador .icono{
+    color: #fff;
+}
+
+.ficha-medica-nav.active #ficha-medicaIndicador{
+    list-style: none;
+    padding: 14px;
+    background: #000;
+    border-radius: 1.3em;
+}
+.ficha-medica-nav.active #ficha-medicaIndicador .icono{
+    color: #fff;
+}
+
+.carpetas-nav.active #carpetasIndicador{
+    list-style: none;
+    padding: 14px;
+    background: #000;
+    border-radius: 1.3em;
+}
+
+.carpetas-nav.active #carpetasIndicador .icono{
+    color: #fff;
+}
+
+.notas-nav.active #notasIndicador{
+    list-style: none;
+    padding: 14px;
+    background: #000;
+    border-radius: 1.3em;
+}
+
+.notas-nav.active #notasIndicador .icono{
+    color: #fff;
+}
+
+.avance-fisico-nav.active #avance-fisicoIndicador{
+    list-style: none;
+    padding: 14px;
+    background: #000;
+    border-radius: 1.3em;
+}
+.avance-fisico-nav.active #avance-fisicoIndicador .icono{
+    color: #fff;
+}
+
+.navegation-li:hover{
+    list-style: none;
+    padding: 14px;
+    background: #000;
+    border-radius: 1.3em;
+}
+
+.icono{
+    font-size: 1.7em;
+    color: #888888;
+}
