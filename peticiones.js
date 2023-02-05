@@ -71,4 +71,25 @@ async function GetData() {
         .then(res => {
             console.log(res)
         })
+
+
+    let resultMenuAlimenticio = await fetch("https://api.metodovargas.app/patients/v1/food_menu/", optionsGeneral)
+        .then(res => res.json())
+        .then(res => {
+            console.log(res)
+        })
+
+
+    let resultListaAlimenticio = await fetch("https://api.metodovargas.app/patients/v1/food_list/", optionsGeneral)
+        .then(res => res.json())
+        .then(res => {
+            console.log(res)
+        })
+
+
+    let resultCartaAlimenticio = await fetch("https://api.metodovargas.app/patients/v1/food_list/", optionsGeneral)
+        .then(res => res.json())
+        .then(res => {
+            console.log(res)
+        })
     }
