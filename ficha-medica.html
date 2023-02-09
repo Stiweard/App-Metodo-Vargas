@@ -5,28 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ficha Médica</title>
     <link rel="stylesheet" href="navegation.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilosGenerales.css">
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="title-information-personal.css">
+    <link rel="stylesheet" href="ficha.css">
 </head>
 
 <body>
+
     <div id="container">
-
         <section id="title-divF-1" class="containerEvento">
+            <ul id="ul-title-resumen">
+                <li style="z-index: -1;" class="li-title-resumen"><i class="fa-solid fa-calendar-days iconoTitle"></i>
+                </li>
+                <li id="titleElemento">Ficha médica</li>
+                <li class="li-title-resumen"><i class="fa-regular fa-user iconoTitle"></i></li>
+            </ul>
+        </section>
 
+        <section>
+            <div class="div-grafico-peso-grasa">
+                <div class="chart-container" style="position: relative; height:auto; width:auto">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            
         </section>
 
         <section id="searchContainer">
-            <div class="searchBox">
+            <div class="searchBox active">
                 <div class="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="searchInput">
-                    <input type="text" id="buscador" autocomplete="off" placeholder="Busca aqui">
+                    <input type="text" id="buscador" autocomplete="off" placeholder="Filtra entre variables">
                 </div>
                 <div class="close">
                     <i class="fa-solid fa-xmark"></i>
@@ -34,33 +49,2693 @@
             </div>
         </section>
 
-        <main>
+        <section class="section2 desplegableSection">
+            <div class="section-1Style1 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-user-plus"></i>
+                    <label class="nombres">Estado de salud</label>
+                    <i class="fa-solid fa-chevron-down section-1 iconDespliegue1"></i>
 
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana1">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana2">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana3">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana4">
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1 clacificacionGeneral1" title="Calificación general">
+                            <p>General</p>
+                        </div>
+                        <div class="divEstadoSalud1 selectorGeneral1"></div>
+                        <div class="divEstadoSalud1 selectorGeneral2"></div>
+                        <div class="divEstadoSalud1 selectorGeneral3"></div>
+                        <div class="divEstadoSalud1 selectorGeneral4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1 clacificacionGeneral2" title="Calificación avance">
+                            <p>Avanve</p>
+                        </div>
+                        <div class="divEstadoSalud1 selectorAvance1">
+
+                        </div>
+                        <div class="divEstadoSalud1 selectorAvance2"></div>
+                        <div class="divEstadoSalud1 selectorAvance3"></div>
+                        <div class="divEstadoSalud1 selectorAvance4"></div>
+                        <div class="divEstadoSalud1 ">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1 clacificacionGeneral2" title="Calificación avance">
+                            <p>Índice <br> MV</p>
+                        </div>
+                        <div class="divEstadoSalud1 selectorIndmv1">
+                        </div>
+                        <div class="divEstadoSalud1 selectorIndmv2"></div>
+                        <div class="divEstadoSalud1 selectorIndmv3"></div>
+                        <div class="divEstadoSalud1 selectorIndmv4"></div>
+                        <div class="divEstadoSalud1 ">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style2 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-list-check"></i>
+                    <label class="nombres">Mediciones y metas</label>
+                    <i class="fa-solid fa-chevron-down section-2 iconDespliegue2"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana5">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana6">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana7">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana8">
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1 MetasPeso"></div>
+                        <div class="divEstadoSalud1 selectorPeso1"></div>
+                        <div class="divEstadoSalud1 selectorPeso2"></div>
+                        <div class="divEstadoSalud1 selectorPeso3"></div>
+                        <div class="divEstadoSalud1 selectorPeso4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1 metasGrasa"></div>
+                        <div class="divEstadoSalud1 selectorGrasa1"></div>
+                        <div class="divEstadoSalud1 selectorGrasa2"></div>
+                        <div class="divEstadoSalud1 selectorGrasa3"></div>
+                        <div class="divEstadoSalud1 selectorGrasa4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1 metasMusculos"></div>
+                        <div class="divEstadoSalud1 selectorMusculos1"></div>
+                        <div class="divEstadoSalud1 selectorMusculos2"></div>
+                        <div class="divEstadoSalud1 selectorMusculos3"></div>
+                        <div class="divEstadoSalud1 selectorMusculos4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Calorias</div>
+                        <div class="divEstadoSalud1 selctorCalorias1"></div>
+                        <div class="divEstadoSalud1 selctorCalorias2"></div>
+                        <div class="divEstadoSalud1 selctorCalorias3"></div>
+                        <div class="divEstadoSalud1 selctorCalorias4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Pasos</div>
+                        <div class="divEstadoSalud1 selctorPasos1"></div>
+                        <div class="divEstadoSalud1 selctorPasos2"></div>
+                        <div class="divEstadoSalud1 selctorPasos3"></div>
+                        <div class="divEstadoSalud1 selctorPasos4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Ritmo <br>cardiaco</div>
+                        <div class="divEstadoSalud1 selctorRC1"></div>
+                        <div class="divEstadoSalud1 selctorRC2"></div>
+                        <div class="divEstadoSalud1 selctorRC3"></div>
+                        <div class="divEstadoSalud1 selctorRC4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Minutos <br>en moviento</div>
+                        <div class="divEstadoSalud1 selctorMM1"></div>
+                        <div class="divEstadoSalud1 selctorMM2"></div>
+                        <div class="divEstadoSalud1 selctorMM3"></div>
+                        <div class="divEstadoSalud1 selctorMM4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1 Aguaselector"></div>
+                        <div class="divEstadoSalud1 selctorAgua1"></div>
+                        <div class="divEstadoSalud1 selctorAgua2"></div>
+                        <div class="divEstadoSalud1 selctorAgua3"></div>
+                        <div class="divEstadoSalud1 selctorAgua4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Ejercicio</div>
+                        <div class="divEstadoSalud1 selctorEjercicio1"></div>
+                        <div class="divEstadoSalud1 selctorEjercicio2"></div>
+                        <div class="divEstadoSalud1 selctorEjercicio3"></div>
+                        <div class="divEstadoSalud1 selctorEjercicio4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Estrés</div>
+                        <div class="divEstadoSalud1 selectorEstres1"></div>
+                        <div class="divEstadoSalud1 selectorEstres2"></div>
+                        <div class="divEstadoSalud1 selectorEstres3"></div>
+                        <div class="divEstadoSalud1 selectorEstres4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Sueño<br> profundo</div>
+                        <div class="divEstadoSalud1 selectorSueno1"></div>
+                        <div class="divEstadoSalud1 selectorSueno2"></div>
+                        <div class="divEstadoSalud1 selectorSueno3"></div>
+                        <div class="divEstadoSalud1 selectorSueno4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Centimetros</div>
+                        <div class="divEstadoSalud1 selectorCP1"></div>
+                        <div class="divEstadoSalud1 selectorCP2"></div>
+                        <div class="divEstadoSalud1 selectorCP3"></div>
+                        <div class="divEstadoSalud1 selectorCP4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1 grasaB"></div>
+                        <div class="divEstadoSalud1 selectorGpS1"></div>
+                        <div class="divEstadoSalud1 selectorGpS2"></div>
+                        <div class="divEstadoSalud1 selectorGpS3"></div>
+                        <div class="divEstadoSalud1 selectorGpS4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style3 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <label class="nombres">Agregar otros alimentos</label>
+                    <i class="fa-solid fa-chevron-down section-3 iconDespliegue3"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana9">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana10">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana11">
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana12">
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1 metaAgregarAlimientos"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentos1"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentos2"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentos3"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentos4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1 metaAgregarAlimentosExeso"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentosExeso1"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentosExeso2"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentosExeso3"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentosExeso4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1 metaAgregarAlimentosS"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentosSemana1"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentosSemana2"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentosSemana3"></div>
+                        <div class="divEstadoSalud1 selectorAgregarAlimentosSemana4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style4 section-1Style item">
+                <h2>
+                    <i class="fa-regular fa-file-lines"></i>
+                    <label class="nombres">Resumen semanal</label>
+                    <i class="fa-solid fa-chevron-down section-4 iconDespliegue4"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana13">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana14">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana15">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana16">
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1">Alimentación</div>
+                        <div class="divEstadoSalud1 SelectorAlimentos1"></div>
+                        <div class="divEstadoSalud1 SelectorAlimentos2"></div>
+                        <div class="divEstadoSalud1 SelectorAlimentos3"></div>
+                        <div class="divEstadoSalud1 SelectorAlimentos4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="divEstadoSalud1">Alimentación</div>
+                        <div class="divEstadoSalud1 SelectorAlimentosa1"></div>
+                        <div class="divEstadoSalud1 SelectorAlimentosa2"></div>
+                        <div class="divEstadoSalud1 SelectorAlimentosa3"></div>
+                        <div class="divEstadoSalud1 SelectorAlimentosa4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="divEstadoSalud1">Emociones</div>
+                        <div class="divEstadoSalud1 SelectorEmociones1"></div>
+                        <div class="divEstadoSalud1 SelectorEmociones2"></div>
+                        <div class="divEstadoSalud1 SelectorEmociones3"></div>
+                        <div class="divEstadoSalud1 SelectorEmociones4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Ejercicio</div>
+                        <div class="divEstadoSalud1 SelectorEjercicio1"></div>
+                        <div class="divEstadoSalud1 SelectorEjercicio2"></div>
+                        <div class="divEstadoSalud1 SelectorEjercicio3"></div>
+                        <div class="divEstadoSalud1 SelectorEjercicio4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Actitudes</div>
+                        <div class="divEstadoSalud1 SelectorActitudes1"></div>
+                        <div class="divEstadoSalud1 SelectorActitudes2"></div>
+                        <div class="divEstadoSalud1 SelectorActitudes3"></div>
+                        <div class="divEstadoSalud1 SelectorActitudes4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Act</div>
+                        <div class="divEstadoSalud1 SelectorActitudes11"></div>
+                        <div class="divEstadoSalud1 SelectorActitudes12"></div>
+                        <div class="divEstadoSalud1 SelectorActitudes13"></div>
+                        <div class="divEstadoSalud1 SelectorActitudes14"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Medio<br>Ambiente</div>
+                        <div class="divEstadoSalud1 SelectorMA1"></div>
+                        <div class="divEstadoSalud1 SelectorMA2"></div>
+                        <div class="divEstadoSalud1 SelectorMA3"></div>
+                        <div class="divEstadoSalud1 SelectorMA4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Adicción</div>
+                        <div class="divEstadoSalud1 SelectorAdccion1"></div>
+                        <div class="divEstadoSalud1 SelectorAdccion2"></div>
+                        <div class="divEstadoSalud1 SelectorAdccion3"></div>
+                        <div class="divEstadoSalud1 SelectorAdccion4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Asistencia<br>presencial</div>
+                        <div class="divEstadoSalud1 SelectorAP1"></div>
+                        <div class="divEstadoSalud1 SelectorAP2"></div>
+                        <div class="divEstadoSalud1 SelectorAP3"></div>
+                        <div class="divEstadoSalud1 SelectorAP4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1">Asistencia<br>app</div>
+                        <div class="divEstadoSalud1 SelectorAppA1"></div>
+                        <div class="divEstadoSalud1 SelectorAppA2"></div>
+                        <div class="divEstadoSalud1 SelectorAppA3"></div>
+                        <div class="divEstadoSalud1 SelectorAppA4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style24 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-triangle-exclamation" style="color: black !important;"></i>
+                    <label class="nombres">Auditorias</label>
+                    <i class="fa-solid fa-chevron-down section-24 iconDespliegue24"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana93">
+                        </div>
+                            <div class="divEstadoSalud1 IndicadorSemana94">
+                            </div>
+                            <div class="divEstadoSalud1 IndicadorSemana95">
+                            </div>
+                            <div class="divEstadoSalud1 IndicadorSemana96">
+                            </div>
+                            <div class="divEstadoSalud1"></div>
+                            <div class="divEstadoSalud1">Apsi</div>
+                            <div class="divEstadoSalud1 SelectorApsi1"></div>
+                            <div class="divEstadoSalud1 SelectorApsi2"></div>
+                            <div class="divEstadoSalud1 SelectorApsi3"></div>
+                            <div class="divEstadoSalud1 SelectorApsi4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Anu</div>
+                            <div class="divEstadoSalud1 SelectorAnu1"></div>
+                            <div class="divEstadoSalud1 SelectorAnu2"></div>
+                            <div class="divEstadoSalud1 SelectorAnu3"></div>
+                            <div class="divEstadoSalud1 SelectorAnu4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Aej</div>
+                            <div class="divEstadoSalud1 SelectorAej1"></div>
+                            <div class="divEstadoSalud1 SelectorAej2"></div>
+                            <div class="divEstadoSalud1 SelectorAej3"></div>
+                            <div class="divEstadoSalud1 SelectorAej4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Arel</div>
+                            <div class="divEstadoSalud1 SelectorArel1"></div>
+                            <div class="divEstadoSalud1 SelectorArel2"></div>
+                            <div class="divEstadoSalud1 SelectorArel3"></div>
+                            <div class="divEstadoSalud1 SelectorArel4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Abal</div>
+                            <div class="divEstadoSalud1 SelectorAbal1"></div>
+                            <div class="divEstadoSalud1 SelectorAbal2"></div>
+                            <div class="divEstadoSalud1 SelectorAbal3"></div>
+                            <div class="divEstadoSalud1 SelectorAbal4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Awha</div>
+                            <div class="divEstadoSalud1 SelectorAwha1"></div>
+                            <div class="divEstadoSalud1 SelectorAwha2"></div>
+                            <div class="divEstadoSalud1 SelectorAwha3"></div>
+                            <div class="divEstadoSalud1 SelectorAwha4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Aan</div>
+                            <div class="divEstadoSalud1 SelectorAan1"></div>
+                            <div class="divEstadoSalud1 SelectorAan2"></div>
+                            <div class="divEstadoSalud1 SelectorAan3"></div>
+                            <div class="divEstadoSalud1 SelectorAan4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Ali</div>
+                            <div class="divEstadoSalud1 SelectorAli1"></div>
+                            <div class="divEstadoSalud1 SelectorAli2"></div>
+                            <div class="divEstadoSalud1 SelectorAli3"></div>
+                            <div class="divEstadoSalud1 SelectorAli4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Abe</div>
+                            <div class="divEstadoSalud1 SelectorAbe1"></div>
+                            <div class="divEstadoSalud1 SelectorAbe2"></div>
+                            <div class="divEstadoSalud1 SelectorAbe3"></div>
+                            <div class="divEstadoSalud1 SelectorAbe4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Alg</div>
+                            <div class="divEstadoSalud1 SelectorAlg1"></div>
+                            <div class="divEstadoSalud1 SelectorAlg2"></div>
+                            <div class="divEstadoSalud1 SelectorAlg3"></div>
+                            <div class="divEstadoSalud1 SelectorAlg4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Tlitt</div>
+                            <div class="divEstadoSalud1 SelectorTlitt1"></div>
+                            <div class="divEstadoSalud1 SelectorTlitt2"></div>
+                            <div class="divEstadoSalud1 SelectorTlitt3"></div>
+                            <div class="divEstadoSalud1 SelectorTlitt4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Rber</div>
+                            <div class="divEstadoSalud1 SelectorRber1"></div>
+                            <div class="divEstadoSalud1 SelectorRber2"></div>
+                            <div class="divEstadoSalud1 SelectorRber3"></div>
+                            <div class="divEstadoSalud1 SelectorRber4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="section-1Style25 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-triangle-exclamation" style="color: black !important;"></i>
+                    <label class="nombres">Reprogramación</label>
+                    <i class="fa-solid fa-chevron-down section-25 iconDespliegue25"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana97">
+                        </div>
+                            <div class="divEstadoSalud1 IndicadorSemana98">
+                            </div>
+                            <div class="divEstadoSalud1 IndicadorSemana99">
+                            </div>
+                            <div class="divEstadoSalud1 IndicadorSemana100">
+                            </div>
+                            <div class="divEstadoSalud1"></div>
+                            <div class="divEstadoSalud1">Nrep</div>
+                            <div class="divEstadoSalud1 SelectorNrep1"></div>
+                            <div class="divEstadoSalud1 SelectorNrep2"></div>
+                            <div class="divEstadoSalud1 SelectorNrep3"></div>
+                            <div class="divEstadoSalud1 SelectorNrep4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Arep</div>
+                            <div class="divEstadoSalud1 SelectorArep1"></div>
+                            <div class="divEstadoSalud1 SelectorArep2"></div>
+                            <div class="divEstadoSalud1 SelectorArep3"></div>
+                            <div class="divEstadoSalud1 SelectorArep4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Cale</div>
+                            <div class="divEstadoSalud1 SelectorCale1"></div>
+                            <div class="divEstadoSalud1 SelectorCale2"></div>
+                            <div class="divEstadoSalud1 SelectorCale3"></div>
+                            <div class="divEstadoSalud1 SelectorCale4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style5 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-face-smile-beam"></i>
+                    <label class="nombres">Actitudes</label>
+                    <i class="fa-solid fa-chevron-down section-5 iconDespliegue5"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana17">
+                        </div>
+                            <div class="divEstadoSalud1 IndicadorSemana18">
+
+                            </div>
+                            <div class="divEstadoSalud1 IndicadorSemana19">
+
+                            </div>
+                            <div class="divEstadoSalud1 IndicadorSemana20">
+
+                            </div>
+                            <div class="divEstadoSalud1"></div>
+                            <div class="divEstadoSalud1">20 cosas<br>a la vez</div>
+                            <div class="divEstadoSalud1 SelectorCosasVez1"></div>
+                            <div class="divEstadoSalud1 SelectorCosasVez2"></div>
+                            <div class="divEstadoSalud1 SelectorCosasVez3"></div>
+                            <div class="divEstadoSalud1 SelectorCosasVez4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Todo<br>perfecto</div>
+                            <div class="divEstadoSalud1 SelectorTodoP1"></div>
+                            <div class="divEstadoSalud1 SelectorTodoP2"></div>
+                            <div class="divEstadoSalud1 SelectorTodoP3"></div>
+                            <div class="divEstadoSalud1 SelectorTodoP4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Ocuparse y<br>preocuparse</div>
+                            <div class="divEstadoSalud1 SelectorOyP1"></div>
+                            <div class="divEstadoSalud1 SelectorOyP2"></div>
+                            <div class="divEstadoSalud1 SelectorOyP3"></div>
+                            <div class="divEstadoSalud1 SelectorOyP4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Decir<br>no</div>
+                            <div class="divEstadoSalud1 SelectorDecirN1"></div>
+                            <div class="divEstadoSalud1 SelectorDecirN2"></div>
+                            <div class="divEstadoSalud1 SelectorDecirN3"></div>
+                            <div class="divEstadoSalud1 SelectorDecirN4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                            <div class="divEstadoSalud1">Tendencia<br>hacer</div>
+                            <div class="divEstadoSalud1 SelectorTendenciaH1"></div>
+                            <div class="divEstadoSalud1 SelectorTendenciaH2"></div>
+                            <div class="divEstadoSalud1 SelectorTendenciaH3"></div>
+                            <div class="divEstadoSalud1 SelectorTendenciaH4"></div>
+                            <div class="divEstadoSalud1">
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="section-1Style6 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-house"></i>
+                    <label class="nombres">Medio ambiente</label>
+                    <i class="fa-solid fa-chevron-down section-6 iconDespliegue6"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana21">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana22">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana23">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana24">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación general">Pareja</div>
+                        <div class="divEstadoSalud1 SelectorPareja1"></div>
+                        <div class="divEstadoSalud1 SelectorPareja2"></div>
+                        <div class="divEstadoSalud1 SelectorPareja3"></div>
+                        <div class="divEstadoSalud1 SelectorPareja4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Hijos</div>
+                        <div class="divEstadoSalud1 SelectorHijos1"></div>
+                        <div class="divEstadoSalud1 SelectorHijos2"></div>
+                        <div class="divEstadoSalud1 SelectorHijos3"></div>
+                        <div class="divEstadoSalud1 SelectorHijos4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Familia</div>
+                        <div class="divEstadoSalud1 SelectorFamilia1"></div>
+                        <div class="divEstadoSalud1 SelectorFamilia2"></div>
+                        <div class="divEstadoSalud1 SelectorFamilia3"></div>
+                        <div class="divEstadoSalud1 SelectorFamilia4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Casa</div>
+                        <div class="divEstadoSalud1 SelectorCasa1"></div>
+                        <div class="divEstadoSalud1 SelectorCasa2"></div>
+                        <div class="divEstadoSalud1 SelectorCasa3"></div>
+                        <div class="divEstadoSalud1 SelectorCasa4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Trabajo</div>
+                        <div class="divEstadoSalud1 SelectorTrabajo1"></div>
+                        <div class="divEstadoSalud1 SelectorTrabajo2"></div>
+                        <div class="divEstadoSalud1 SelectorTrabajo3"></div>
+                        <div class="divEstadoSalud1 SelectorTrabajo4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Preocupacion<br>covid</div>
+                        <div class="divEstadoSalud1 SelectorPreocupacion1"></div>
+                        <div class="divEstadoSalud1 SelectorPreocupacion2"></div>
+                        <div class="divEstadoSalud1 SelectorPreocupacion3"></div>
+                        <div class="divEstadoSalud1 SelectorPreocupacion4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Politica</div>
+                        <div class="divEstadoSalud1 SelectorPolitica1"></div>
+                        <div class="divEstadoSalud1 SelectorPolitica2"></div>
+                        <div class="divEstadoSalud1 SelectorPolitica3"></div>
+                        <div class="divEstadoSalud1 SelectorPolitica4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style7 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-burger"></i>
+                    <label class="nombres">Adicciones</label>
+                    <i class="fa-solid fa-chevron-down section-7 iconDespliegue7"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana25">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana26">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana27">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana28">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación general">por los<br>dulces</div>
+                        <div class="divEstadoSalud1 SelectorPdulces1"></div>
+                        <div class="divEstadoSalud1 SelectorPdulces2"></div>
+                        <div class="divEstadoSalud1 SelectorPdulces3"></div>
+                        <div class="divEstadoSalud1 SelectorPdulces4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">por los<br>harinas</div>
+                        <div class="divEstadoSalud1 SelectorParinas1"></div>
+                        <div class="divEstadoSalud1 SelectorParinas2"></div>
+                        <div class="divEstadoSalud1 SelectorParinas3"></div>
+                        <div class="divEstadoSalud1 SelectorParinas4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Comer por<br>ansiedad</div>
+                        <div class="divEstadoSalud1 SelectorCansiedad1"></div>
+                        <div class="divEstadoSalud1 SelectorCansiedad2"></div>
+                        <div class="divEstadoSalud1 SelectorCansiedad3"></div>
+                        <div class="divEstadoSalud1 SelectorCansiedad4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style8 section-1Style item" style="display: none;">
+                <h2>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <label class="nombres">Psi</label>
+                    <i class="fa-solid fa-chevron-down section-8 iconDespliegue8"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana29">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana30">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana31">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana32">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación general">Psi<br>doctor</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Rpsi</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Orpsi</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ppsi</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Opsi</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Apoyo de<br>nutrición</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Opinion sobre<br>nutrición</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Apoyo de<br>Nutrición</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Opinión de<br>ejersicios</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style9 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-face-smile-beam"></i>
+                    <label class="nombres">Psi (flores)</label>
+                    <i class="fa-solid fa-chevron-down section-9 iconDespliegue9"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana33">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana34">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana35">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana36">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación general">Holly</div>
+                        <div class="divEstadoSalud1 Selectorholly1"></div>
+                        <div class="divEstadoSalud1 Selectorholly2"></div>
+                        <div class="divEstadoSalud1 Selectorholly3"></div>
+                        <div class="divEstadoSalud1 Selectorholly4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Chico ry</div>
+                        <div class="divEstadoSalud1 SelectorChicoRy1"></div>
+                        <div class="divEstadoSalud1 SelectorChicoRy2"></div>
+                        <div class="divEstadoSalud1 SelectorChicoRy3"></div>
+                        <div class="divEstadoSalud1 SelectorChicoRy4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Agri<br>mony</div>
+                        <div class="divEstadoSalud1 SelectorAgriMony1"></div>
+                        <div class="divEstadoSalud1 SelectorAgriMony2"></div>
+                        <div class="divEstadoSalud1 SelectorAgriMony3"></div>
+                        <div class="divEstadoSalud1 SelectorAgriMony4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Rock<br>water</div>
+                        <div class="divEstadoSalud1 SelectorRockW1"></div>
+                        <div class="divEstadoSalud1 SelectorRockW2"></div>
+                        <div class="divEstadoSalud1 SelectorRockW3"></div>
+                        <div class="divEstadoSalud1 SelectorRockW4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Aspen</div>
+                        <div class="divEstadoSalud1 SelectorAspen1"></div>
+                        <div class="divEstadoSalud1 SelectorAspen2"></div>
+                        <div class="divEstadoSalud1 SelectorAspen3"></div>
+                        <div class="divEstadoSalud1 SelectorAspen4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Larch</div>
+                        <div class="divEstadoSalud1 SelectorLarch1"></div>
+                        <div class="divEstadoSalud1 SelectorLarch2"></div>
+                        <div class="divEstadoSalud1 SelectorLarch3"></div>
+                        <div class="divEstadoSalud1 SelectorLarch4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Gorse</div>
+                        <div class="divEstadoSalud1 SelectorGorse1"></div>
+                        <div class="divEstadoSalud1 SelectorGorse2"></div>
+                        <div class="divEstadoSalud1 SelectorGorse3"></div>
+                        <div class="divEstadoSalud1 SelectorGorse4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Wildoat</div>
+                        <div class="divEstadoSalud1 SelectorWildoat1"></div>
+                        <div class="divEstadoSalud1 SelectorWildoat2"></div>
+                        <div class="divEstadoSalud1 SelectorWildoat3"></div>
+                        <div class="divEstadoSalud1 SelectorWildoat4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Heather</div>
+                        <div class="divEstadoSalud1 SelectorHeather1"></div>
+                        <div class="divEstadoSalud1 SelectorHeather2"></div>
+                        <div class="divEstadoSalud1 SelectorHeather3"></div>
+                        <div class="divEstadoSalud1 SelectorHeather4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ches nut<br>bud</div>
+                        <div class="divEstadoSalud1 SelectorChesNut1"></div>
+                        <div class="divEstadoSalud1 SelectorChesNut2"></div>
+                        <div class="divEstadoSalud1 SelectorChesNut3"></div>
+                        <div class="divEstadoSalud1 SelectorChesNut4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">White chesCnut</div>
+                        <div class="divEstadoSalud1 SelectorWhite1"></div>
+                        <div class="divEstadoSalud1 SelectorWhite2"></div>
+                        <div class="divEstadoSalud1 SelectorWhite3"></div>
+                        <div class="divEstadoSalud1 SelectorWhite4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Sweet che<br>snut</div>
+                        <div class="divEstadoSalud1 SelectorSweet1"></div>
+                        <div class="divEstadoSalud1 SelectorSweet2"></div>
+                        <div class="divEstadoSalud1 SelectorSweet3"></div>
+                        <div class="divEstadoSalud1 SelectorSweet4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Red ches<br>nut</div>
+                        <div class="divEstadoSalud1 SelectorRedChes1"></div>
+                        <div class="divEstadoSalud1 SelectorRedChes2"></div>
+                        <div class="divEstadoSalud1 SelectorRedChes3"></div>
+                        <div class="divEstadoSalud1 SelectorRedChes4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Cent aury</div>
+                        <div class="divEstadoSalud1 SelectorCentAury1"></div>
+                        <div class="divEstadoSalud1 SelectorCentAury2"></div>
+                        <div class="divEstadoSalud1 SelectorCentAury3"></div>
+                        <div class="divEstadoSalud1 SelectorCentAury4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Cherry plum</div>
+                        <div class="divEstadoSalud1 SelectorCherryP1"></div>
+                        <div class="divEstadoSalud1 SelectorCherryP2"></div>
+                        <div class="divEstadoSalud1 SelectorCherryP3"></div>
+                        <div class="divEstadoSalud1 SelectorCherryP4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Cerato</div>
+                        <div class="divEstadoSalud1 SelectorCerato1"></div>
+                        <div class="divEstadoSalud1 SelectorCerato2"></div>
+                        <div class="divEstadoSalud1 SelectorCerato3"></div>
+                        <div class="divEstadoSalud1 SelectorCerato4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Clematis</div>
+                        <div class="divEstadoSalud1 SelectorClematis1"></div>
+                        <div class="divEstadoSalud1 SelectorClematis2"></div>
+                        <div class="divEstadoSalud1 SelectorClematis3"></div>
+                        <div class="divEstadoSalud1 SelectorClematis4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Star of be<br>thlehem</div>
+                        <div class="divEstadoSalud1 SelectorStarThlehem1"></div>
+                        <div class="divEstadoSalud1 SelectorStarThlehem2"></div>
+                        <div class="divEstadoSalud1 SelectorStarThlehem3"></div>
+                        <div class="divEstadoSalud1 SelectorStarThlehem4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Gentian</div>
+                        <div class="divEstadoSalud1 SelectorGentian1"></div>
+                        <div class="divEstadoSalud1 SelectorGentian2"></div>
+                        <div class="divEstadoSalud1 SelectorGentian3"></div>
+                        <div class="divEstadoSalud1 SelectorGentian4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Beech</div>
+                        <div class="divEstadoSalud1 SelectorBeech1"></div>
+                        <div class="divEstadoSalud1 SelectorBeech2"></div>
+                        <div class="divEstadoSalud1 SelectorBeech3"></div>
+                        <div class="divEstadoSalud1 SelectorBeech4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Rock<br>rose</div>
+                        <div class="divEstadoSalud1 SelectorRockRose1"></div>
+                        <div class="divEstadoSalud1 SelectorRockRose2"></div>
+                        <div class="divEstadoSalud1 SelectorRockRose3"></div>
+                        <div class="divEstadoSalud1 SelectorRockRose4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Horn<br>beam</div>
+                        <div class="divEstadoSalud1 SelectorHornBeam1"></div>
+                        <div class="divEstadoSalud1 SelectorHornBeam2"></div>
+                        <div class="divEstadoSalud1 SelectorHornBeam3"></div>
+                        <div class="divEstadoSalud1 SelectorHornBeam4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">impatiens</div>
+                        <div class="divEstadoSalud1 SelectorImpatiens1"></div>
+                        <div class="divEstadoSalud1 SelectorImpatiens2"></div>
+                        <div class="divEstadoSalud1 SelectorImpatiens3"></div>
+                        <div class="divEstadoSalud1 SelectorImpatiens4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Honeysuckle</div>
+                        <div class="divEstadoSalud1 SelectorHoneysuckle1"></div>
+                        <div class="divEstadoSalud1 SelectorHoneysuckle2"></div>
+                        <div class="divEstadoSalud1 SelectorHoneysuckle3"></div>
+                        <div class="divEstadoSalud1 SelectorHoneysuckle4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Crab apple</div>
+                        <div class="divEstadoSalud1 SelectorCrabAple1"></div>
+                        <div class="divEstadoSalud1 SelectorCrabAple2"></div>
+                        <div class="divEstadoSalud1 SelectorCrabAple3"></div>
+                        <div class="divEstadoSalud1 SelectorCrabAple4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Mimulus</div>
+                        <div class="divEstadoSalud1 SelectorMimulus1"></div>
+                        <div class="divEstadoSalud1 SelectorMimulus2"></div>
+                        <div class="divEstadoSalud1 SelectorMimulus3"></div>
+                        <div class="divEstadoSalud1 SelectorMimulus4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Mustard</div>
+                        <div class="divEstadoSalud1 SelectorMustard1"></div>
+                        <div class="divEstadoSalud1 SelectorMustard2"></div>
+                        <div class="divEstadoSalud1 SelectorMustard3"></div>
+                        <div class="divEstadoSalud1 SelectorMustard4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Walnut</div>
+                        <div class="divEstadoSalud1 SelectorWalnut1"></div>
+                        <div class="divEstadoSalud1 SelectorWalnut2"></div>
+                        <div class="divEstadoSalud1 SelectorWalnut3"></div>
+                        <div class="divEstadoSalud1 SelectorWalnut4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Olive</div>
+                        <div class="divEstadoSalud1 SelectorOlive1"></div>
+                        <div class="divEstadoSalud1 SelectorOlive2"></div>
+                        <div class="divEstadoSalud1 SelectorOlive3"></div>
+                        <div class="divEstadoSalud1 SelectorOlive4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Elm</div>
+                        <div class="divEstadoSalud1 SelectorElm1"></div>
+                        <div class="divEstadoSalud1 SelectorElm2"></div>
+                        <div class="divEstadoSalud1 SelectorElm3"></div>
+                        <div class="divEstadoSalud1 SelectorElm4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Pine</div>
+                        <div class="divEstadoSalud1 SelectorPine1"></div>
+                        <div class="divEstadoSalud1 SelectorPine2"></div>
+                        <div class="divEstadoSalud1 SelectorPine3"></div>
+                        <div class="divEstadoSalud1 SelectorPine4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Oak</div>
+                        <div class="divEstadoSalud1 SelectorOak1"></div>
+                        <div class="divEstadoSalud1 SelectorOak2"></div>
+                        <div class="divEstadoSalud1 SelectorOak3"></div>
+                        <div class="divEstadoSalud1 SelectorOak4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Wild<br>rose</div>
+                        <div class="divEstadoSalud1 SelectorWildRose1"></div>
+                        <div class="divEstadoSalud1 SelectorWildRose2"></div>
+                        <div class="divEstadoSalud1 SelectorWildRose3"></div>
+                        <div class="divEstadoSalud1 SelectorWildRose4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Willow</div>
+                        <div class="divEstadoSalud1 SelectorWillow1"></div>
+                        <div class="divEstadoSalud1 SelectorWillow2"></div>
+                        <div class="divEstadoSalud1 SelectorWillow3"></div>
+                        <div class="divEstadoSalud1 SelectorWillow4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Scleranthus</div>
+                        <div class="divEstadoSalud1 SelectorScleranthus1"></div>
+                        <div class="divEstadoSalud1 SelectorScleranthus2"></div>
+                        <div class="divEstadoSalud1 SelectorScleranthus3"></div>
+                        <div class="divEstadoSalud1 SelectorScleranthus4"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Verdain</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Vine</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Water<br>viotet</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Rescue remedy</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style10 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <label class="nombres">Alimentos f1</label>
+                    <i class="fa-solid fa-chevron-down section-10 iconDespliegue10"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana37">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana38">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana39">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana40">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación general">Fase</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Proteínas<br>f1</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Vegetales<br>f1</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Grasas<br>f1</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Granos<br>f1</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Frutas<br>f1</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Lácteos<br>f1</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Harinas<br>f1</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style11 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <label class="nombres">Alimentos f2</label>
+                    <i class="fa-solid fa-chevron-down section-11 iconDespliegue11"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana41">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana42">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana43">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana44">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Proteínas<br>f2</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Vegetales<br>f2</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Grasas<br>f2</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Granos<br>f2</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Frutas<br>f2</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Lácteos<br>f2</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Harinas<br>f2</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style12 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <label class="nombres">Alimentos f3</label>
+                    <i class="fa-solid fa-chevron-down section-12 iconDespliegue12"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana45">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana46">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana47">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana48">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Proteínas<br>f3</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Vegetales<br>f3</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Grasas<br>f3</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Granos<br>f3</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Frutas<br>f3</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Lácteos<br>f3</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Harinas<br>f3</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style13 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-person-running"></i>
+                    <label class="nombres">Ejercicios</label>
+                    <i class="fa-solid fa-chevron-down section-13 iconDespliegue13"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana49">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana50">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana51">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana52">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Nivel</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Método Vargar</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Calentamiento</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Fuerza</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Cardio</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Movilidad</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style14 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <label class="nombres">Fuerza MV</label>
+                    <i class="fa-solid fa-chevron-down section-14 iconDespliegue14"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana53">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana54">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana55">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana56">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ligas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Pesas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Isométricos</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Peso corporal</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Abdomen</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Glúteos</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style15 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-person-biking"></i>
+                    <label class="nombres">Cardio MV</label>
+                    <i class="fa-solid fa-chevron-down section-15 iconDespliegue15"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana57">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana58">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana59">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana60">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Bandas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Caminar/<br>trotar</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ciclismo</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Natación</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Tenis</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Taebo</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Baile</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Aeróbicos</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Gimnasio</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Boxeo</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Artes marciales</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Burpees</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Salto doble</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Crossfit</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Entrenador</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style16 section-1Style item">
+                <h2>
+                    <i class="fa-regular fa-face-sad-tear"></i>
+                    <label class="nombres">Sintomas</label>
+                    <i class="fa-solid fa-chevron-down section-16 iconDespliegue16"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana61">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana62">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana63">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana64">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Acidez</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Flatulencia</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Estreñimiento</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ronquidos</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Rodillas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Insomnio</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Piernas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style17 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-heart"></i>
+                    <label class="nombres">Órganos</label>
+                    <i class="fa-solid fa-chevron-down section-17 iconDespliegue17"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana65">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana66">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana67">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana68">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Tiroides</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Carótida</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Higado</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Faringe</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Laringe</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Hiato<br>esofágico</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Esófago</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Estómago</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Vesicula biliar</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Páncreas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Riñones</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Bazo</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Colon</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Mamas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Próstata</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ovarios/<br>testiculos</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Rodilla</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Columna</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style18 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-face-tired"></i>
+                    <label class="nombres">Enfermedades</label>
+                    <i class="fa-solid fa-chevron-down section-18 iconDespliegue18"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana69">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana70">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana71">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana72">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Hipertensión</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Infarto</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Diabetes</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Apnea</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Hipotiroidismo</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Cáncer</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style19 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-syringe"></i>
+                    <label class="nombres">Tratamientos</label>
+                    <i class="fa-solid fa-chevron-down section-19 iconDespliegue19"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana73">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana74">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana75">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana76">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Litio</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Eutirox</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Metformina</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">5htp</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Aldactone</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Veltry<br>x</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ligadura</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Berberina</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Magnesio</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style20 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-kit-medical"></i>
+                    <label class="nombres">Estudios Pendientes</label>
+                    <i class="fa-solid fa-chevron-down section-20 iconDespliegue20"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana77">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana78">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana79">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana80">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Gastroscopia</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Colonoscopia</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Abdominal</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Tiroides</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Elastografía</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Elastografía<br>tiroides</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Elastografía<br>higado</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Elastografía<br>páncreas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style21 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <label class="nombres">Interconsultas</label>
+                    <i class="fa-solid fa-chevron-down section-21 iconDespliegue21"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana81">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana82">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana83">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana84">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Cardiología</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Traumatólogo</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Fisiatría</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Medicina<br>interna</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ginecología</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ostetricia</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Pediatría</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style22 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-gear"></i>
+                    <label class="nombres">Administración</label>
+                    <i class="fa-solid fa-chevron-down section-22 iconDespliegue22"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana85">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana86">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana87">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana88">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Honorarios</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-1Style23 section-1Style item">
+                <h2>
+                    <i class="fa-solid fa-weight-scale"></i>
+                    <label class="nombres">Material Utilizado</label>
+                    <i class="fa-solid fa-chevron-down section-23 iconDespliegue23"></i>
+
+                </h2>
+                <div class="divcontainerEstadoSalud">
+                    <div class="containerGrid displayNone">
+                        <div class="divEstadoSalud1">Semanas</div>
+                        <div class="divEstadoSalud1 IndicadorSemana89">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana90">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana91">
+
+                        </div>
+                        <div class="divEstadoSalud1 IndicadorSemana92">
+
+                        </div>
+                        <div class="divEstadoSalud1"></div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Relog</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Balanza</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Ligas</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Tilio<br>comprimidos</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Berberina</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Magnesio</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Selenio</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Zinc</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Edulcorrante</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                        <div class="divEstadoSalud1" title="Calificación avance">Otros</div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1 Selector"></div>
+                        <div class="divEstadoSalud1">
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         </main>
 
         <nav id="navegation" class="ficha-medica-nav">
             <!-- navegador -->
         </nav>
+
     </div>
     <div class="continerInfoUser">
-        
-        
-    </div>
-    <script src="peticiones.js"></script>
+        <div class="flechaTitle">
+            <i class="fa-solid fa-chevron-left iconFleUserback"></i>
+            <h2 id="titleInfoUser">Informacion personal</h2>
+            <i class="fa-solid fa-chevron-left iconFleUserback1"></i>
 
+        </div>
+        <div class="titleNombreUser">
+        </div>
+        <div class="div-flex-Info-pers">
+            <div class="contenidoInformacionUser">
+                <p class="infoUserContent">Número de documento:<span class="contentUserSpan spanUser1"></span></p>
+                <p class="infoUserContent">Correo:<span class="contentUserSpan spanUser2"></span></p>
+                <p class="infoUserContent">Sexo:<span class="contentUserSpan spanUser3"></span></p>
+                <p class="infoUserContent">Fecha de macimiento:<span class="contentUserSpan spanUser4"></span></p>
+                <p class="infoUserContent">Edad:<span class="contentUserSpan spanUser5"></span></p>
+                <p class="infoUserContent">Altura:<span class="contentUserSpan spanUser6"></span></p>
+                <p class="infoUserContent">Fecha de inicio:<span class="contentUserSpan spanUser7"></span></p>
+                <p class="infoUserContent">Semana actual:<span class="contentUserSpan spanUser8"></span></p>
+                <p class="infoUserContent">Profeción:<span class="contentUserSpan spanUser9"></span></p>
+            </div>
+        </div>
+        <div class="containerBotonsecion blurBotonC"><button id="botonSecion"> cerrar secion</button></div>
+        <div class="containerBotonsecion"><button id="botonSecion"> cerrar secion</button></div>
+    </div>
+    <!-- peticiones -->
+    <script src="peticiones.js"></script>
     <!-- icono Font Awesome -->
     <script src="https://kit.fontawesome.com/a57b9d94d2.js" crossorigin="anonymous"></script>
     <!-- navegacion -->
     <script src="navegation.js"></script>
-    <!-- ficha-medica -->
-    <script src="ficha-medica.js"></script>
+
+    <!-- graficos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="graficos.js"></script>
     <!-- search -->
     <script
         src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-eefb9194-460d-4cc1-ef47-678bc64e746f"
         crossorigin=""></script>
-    <script src="search.js"></script>
+
+    <!-- ficha-medica -->
+    <script src="ficha-medica.js"></script>
     <!-- title -->
     <script src="title-information-personal.js"></script>
 </body>

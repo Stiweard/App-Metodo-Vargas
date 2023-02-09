@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notas para ti</title>
     <link rel="stylesheet" href="navegation.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilosGenerales.css">
@@ -16,21 +16,60 @@
 <body>
     <div id="container">
         <section id="title-divN-1" class="containerEvento">
-
+            <ul id="ul-title-resumen">
+                <li style="z-index: -1;" class="li-title-resumen"><i class="fa-solid fa-calendar-days iconoTitle"></i>
+                </li>
+                <li id="titleElemento">Notas para ti</li>
+                <li class="li-title-resumen"><i class="fa-regular fa-user iconoTitle"></i></li>
+            </ul>
         </section>
-        <section>
 
-        </section>
-        <main>
-
+        <main class="main-notas">
+            <div class="div-que-son-notas">
+                <div class="estilos-que-son">
+                    <p>que son estas notas</p>
+                    <p class="p-contenido-que-son-notas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+                        quis assumenda non nihil
+                        veritatis exercitationem officia consequatur esse ea at porro, libero numquam maiores dolorum
+                        impedit fugit enim eveniet totam!</p>
+                    <div class="div-flex-que">
+                        <i class="fa-solid fa-thumbtack"></i>
+                        <p>4 de febrero 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="peticion-notas">
+            </div>
         </main>
+
         <nav id="navegation" class="notas-nav">
             <!-- navegador -->
         </nav>
     </div>
     <div class="continerInfoUser">
-        
-        
+        <div class="flechaTitle">
+            <i class="fa-solid fa-chevron-left iconFleUserback"></i>
+            <h2 id="titleInfoUser">Informacion personal</h2>
+            <i class="fa-solid fa-chevron-left iconFleUserback1"></i>
+
+        </div>
+        <div class="titleNombreUser">
+        </div>
+        <div class="div-flex-Info-pers">
+            <div class="contenidoInformacionUser">
+                <p class="infoUserContent">Número de documento:<span class="contentUserSpan spanUser1"></span></p>
+                <p class="infoUserContent">Correo:<span class="contentUserSpan spanUser2"></span></p>
+                <p class="infoUserContent">Sexo:<span class="contentUserSpan spanUser3"></span></p>
+                <p class="infoUserContent">Fecha de macimiento:<span class="contentUserSpan spanUser4"></span></p>
+                <p class="infoUserContent">Edad:<span class="contentUserSpan spanUser5"></span></p>
+                <p class="infoUserContent">Altura:<span class="contentUserSpan spanUser6"></span></p>
+                <p class="infoUserContent">Fecha de inicio:<span class="contentUserSpan spanUser7"></span></p>
+                <p class="infoUserContent">Semana actual:<span class="contentUserSpan spanUser8"></span></p>
+                <p class="infoUserContent">Profeción:<span class="contentUserSpan spanUser9"></span></p>
+            </div>
+        </div>
+        <div class="containerBotonsecion blurBotonC"><button id="botonSecion"> cerrar secion</button></div>
+        <div class="containerBotonsecion"><button id="botonSecion"> cerrar secion</button></div>
     </div>
     <!-- peticiones -->
     <script src="peticiones.js"></script>

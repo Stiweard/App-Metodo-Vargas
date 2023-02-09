@@ -1,0 +1,2543 @@
+/* section 1 */
+.section1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+/* section 1 */
+
+
+/* section 2 */
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+
+.section-1Style {
+    width: 90vw;
+    height: 80px;
+    background: #151515;
+    margin: 1px;
+    position: relative;
+    transition: .5s;
+}
+
+.section-1Style1 {
+    border-radius: 30px 30px 0 0;
+}
+
+.section-1Style23 {
+    margin-bottom: 90px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+
+/* style1 */
+
+.section-1Style1.active {
+    height: 376px;
+    transition: .5s;
+}
+
+.section-1Style1.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style1.active .iconDespliegue1 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style1 .iconDespliegue1 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style1.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+
+.section-1Style1 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style1 h2 i {
+    color: #f74b4b;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style1.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+.section-1Style1 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+.section-1Style1 .displayNone {
+    display: none;
+}
+
+.section-1Style1.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style1.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style1 */
+
+/* style2 */
+
+.section-1Style2.active {
+    height: 1114px;
+    transition: .5s;
+}
+
+.section-1Style2.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style2.active .iconDespliegue2 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style2 .iconDespliegue2 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style2.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style2 h2 i {
+    color: #999595;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+
+.section-1Style2 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+
+.section-1Style2.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style2 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(14, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+.section-1Style2 .displayNone {
+    display: none;
+}
+
+.section-1Style2.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style2.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style2 */
+
+/* style3 */
+
+.section-1Style3.active {
+    height: 376px;
+    transition: .5s;
+}
+
+.section-1Style3.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style3.active .iconDespliegue3 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style3 .iconDespliegue3 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style3.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style3 h2 i {
+    color: #eef76f;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style3 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style3.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style3 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+.section-1Style3 .displayNone {
+    display: none;
+}
+
+.section-1Style3.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style3.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style3 */
+
+/* style4 */
+
+.section-1Style4.active {
+    height: 892px;
+    transition: .5s;
+}
+
+.section-1Style4.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style4.active .iconDespliegue4 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style4 .iconDespliegue4 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style4.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style4 h2 i {
+    color: #287eee;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style4 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style4.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style4 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(11, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+.section-1Style4 .displayNone {
+    display: none;
+}
+
+.section-1Style4.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style4.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+
+/* style4 */
+
+/* style5 */
+
+.section-1Style5.active {
+    height: 527px;
+    transition: .5s;
+}
+
+.section-1Style5.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style5.active .iconDespliegue5 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style5 .iconDespliegue5 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style5.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style5 h2 i {
+    color: #e9ff1e;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style5 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style5.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style5 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+.section-1Style5 .displayNone {
+    display: none;
+}
+
+.section-1Style5.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style5.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style5 */
+
+/* style6 */
+
+.section-1Style6.active {
+    height: 672px;
+    transition: .5s;
+}
+
+.section-1Style6.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style6.active .iconDespliegue6 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style6 .iconDespliegue6 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style6.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style6 h2 i {
+    color: #1f3ff3;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style6 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style6.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style6 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+.section-1Style6 .displayNone {
+    display: none;
+}
+
+.section-1Style6.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style6.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style6 */
+
+/* style7 */
+
+.section-1Style7.active {
+    height: 372px;
+    transition: .5s;
+}
+
+.section-1Style7.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style7.active .iconDespliegue7 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style7 .iconDespliegue7 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style7.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style7 h2 i {
+    color: #e5ff00;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style7 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style7.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style7 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+.section-1Style7 .displayNone {
+    display: none;
+}
+
+.section-1Style7.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style7.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style7 */
+
+/* style8 */
+
+.section-1Style8.active {
+    height: 821px;
+    transition: .5s;
+}
+
+.section-1Style8.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style8.active .iconDespliegue8 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style8 .iconDespliegue8 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style8.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style8 h2 i {
+    color: #e9ff1e;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style8 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style8.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style8 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+.section-1Style8 .displayNone {
+    display: none;
+}
+
+.section-1Style8.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style8.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style8 */
+
+/* style9 */
+
+.section-1Style9.active {
+    height: 3041px;
+    transition: .5s;
+}
+
+.section-1Style9.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-1Style9.active .iconDespliegue9 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style9 .iconDespliegue9 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style9.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style9 h2 i {
+    color: #e9ff1e;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style9 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style9.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style9 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(40, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style9 .displayNone {
+    display: none;
+}
+
+.section-1Style9.active .displayNone {
+    display: grid;
+}
+
+
+.section-1Style9.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style9 */
+
+/* style10 */
+
+.section-1Style10.active {
+    height: 746px;
+    transition: .5s;
+}
+
+.section-1Style10.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style10.active .iconDespliegue10 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style10 .iconDespliegue10 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style10.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style10 h2 i {
+    color: #63f53e;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style10 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style10.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style10 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style10 .displayNone {
+    display: none;
+}
+
+.section-1Style10.active .displayNone {
+    display: grid;
+}
+
+.section-1Style10.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style10 */
+
+/* style11 */
+
+.section-1Style11.active {
+    height: 671px;
+    transition: .5s;
+}
+
+.section-1Style11.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style11.active .iconDespliegue11 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style11 .iconDespliegue11 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style11.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style11 h2 i {
+    color: #63f53e;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style11 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style11.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style11 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style11 .displayNone {
+    display: none;
+}
+
+.section-1Style11.active .displayNone {
+    display: grid;
+}
+
+.section-1Style11.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style11 */
+
+/* style12 */
+
+.section-1Style12.active {
+    height: 671px;
+    transition: .5s;
+}
+
+.section-1Style12.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style12.active .iconDespliegue12 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style12 .iconDespliegue12 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style12.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style12 h2 i {
+    color: #63f53e;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+
+.section-1Style12 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style12.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style12 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style12 .displayNone {
+    display: none;
+}
+
+.section-1Style12.active .displayNone {
+    display: grid;
+}
+
+.section-1Style12.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+
+/* style12 */
+
+/* style13 */
+
+.section-1Style13.active {
+    height: 596px;
+    transition: .5s;
+}
+
+.section-1Style13.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style13.active .iconDespliegue13 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style13 .iconDespliegue13 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style13.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style13 h2 i {
+    color: #eaf4ff;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style13 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style13.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style13 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style13 .displayNone {
+    display: none;
+}
+
+.section-1Style13.active .displayNone {
+    display: grid;
+}
+
+.section-1Style13.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+
+
+/* style13 */
+
+/* style14 */
+
+.section-1Style14.active {
+    height: 594px;
+    transition: .5s;
+}
+
+.section-1Style14.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style14.active .iconDespliegue14 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style14 .iconDespliegue14 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style14.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style14 h2 i {
+    color: #1f7fec;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style14 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style14.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style14 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style14 .displayNone {
+    display: none;
+}
+
+.section-1Style14.active .displayNone {
+    display: grid;
+}
+
+.section-1Style14.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+
+/* style14 */
+
+/* style15 */
+
+.section-1Style15.active {
+    height: 1265px;
+    transition: .5s;
+}
+
+.section-1Style15.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style15.active .iconDespliegue15 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style15 .iconDespliegue15 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style15.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style15 h2 i {
+    color: #488ddb;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style15 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style15.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style15 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(16, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style15 .displayNone {
+    display: none;
+}
+
+.section-1Style15.active .displayNone {
+    display: grid;
+}
+
+.section-1Style15.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style15 */
+
+/* style16 */
+
+.section-1Style16.active {
+    height: 671px;
+    transition: .5s;
+}
+
+.section-1Style16.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style16.active .iconDespliegue16 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style16 .iconDespliegue16 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style16.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style16 h2 i {
+    color: #db4854;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style16 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style16.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style16 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style16 .displayNone {
+    display: none;
+}
+
+.section-1Style16.active .displayNone {
+    display: grid;
+}
+
+.section-1Style16.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style16 */
+
+/* style17 */
+
+.section-1Style17.active {
+    height: 1486px;
+    transition: .5s;
+}
+
+.section-1Style17.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style17.active .iconDespliegue17 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style17 .iconDespliegue17 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style17.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style17 h2 i {
+    color: #f31d1d;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style17 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style17.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style17 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(19, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style17 .displayNone {
+    display: none;
+}
+
+.section-1Style17.active .displayNone {
+    display: grid;
+}
+
+.section-1Style17.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style17 */
+
+/* style18 */
+
+.section-1Style18.active {
+    height: 601px;
+    transition: .5s;
+}
+
+.section-1Style18.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style18.active .iconDespliegue18 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style18 .iconDespliegue18 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style18.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style18 h2 i {
+    color: #f30000;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style18 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+
+.section-1Style18.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style18 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style18 .displayNone {
+    display: none;
+}
+
+.section-1Style18.active .displayNone {
+    display: grid;
+}
+
+.section-1Style18.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style18 */
+
+/* style19 */
+
+.section-1Style19.active {
+    height: 821px;
+    transition: .5s;
+}
+
+.section-1Style19.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style19.active .iconDespliegue19 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style19 .iconDespliegue19 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style19.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style19 h2 i {
+    color: #5a97dd;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style19 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+
+.section-1Style19.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style19 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style19 .displayNone {
+    display: none;
+}
+
+.section-1Style19.active .displayNone {
+    display: grid;
+}
+
+.section-1Style19.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style19 */
+
+/* style20 */
+
+.section-1Style20.active {
+    height: 746px;
+    transition: .5s;
+}
+
+.section-1Style20.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style20.active .iconDespliegue20 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style20 .iconDespliegue20 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style20.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style20 h2 i {
+    color: #d31900;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style20 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style20.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style20 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style20 .displayNone {
+    display: none;
+}
+
+.section-1Style20.active .displayNone {
+    display: grid;
+}
+
+.section-1Style20.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style20 */
+
+/* style21 */
+
+.section-1Style21.active {
+    height: 671px;
+    transition: .5s;
+}
+
+.section-1Style21.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style21.active .iconDespliegue21 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style21 .iconDespliegue21 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style21.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style21 h2 i {
+    color: hsl(213, 90%, 88%);
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style21 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style21.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style21 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style21 .displayNone {
+    display: none;
+}
+
+.section-1Style21.active .displayNone {
+    display: grid;
+}
+
+.section-1Style21.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+/* style21 */
+
+/* style22 */
+
+.section-1Style22.active {
+    height: 226px;
+    transition: .5s;
+}
+
+.section-1Style22.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style22.active .iconDespliegue22 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style22 .iconDespliegue22 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style22.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style22 h2 i {
+    color: #3effff;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style22 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+
+.section-1Style22.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style22 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style22 .displayNone {
+    display: none;
+}
+
+.section-1Style22.active .displayNone {
+    display: grid;
+}
+
+.section-1Style22.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+
+/* style22 */
+
+/* style23 */
+
+.section-1Style23.active {
+    height: 921px;
+    transition: .5s;
+}
+
+.section-1Style23.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style23.active .iconDespliegue23 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style23 .iconDespliegue23 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style23.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style23 h2 i {
+    color: #89b8ee;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style23 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style23.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style23 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(11, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style23 .displayNone {
+    display: none;
+}
+
+.section-1Style23.active .displayNone {
+    display: grid;
+}
+
+.section-1Style23.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+
+/* style23 */
+/* style24 */
+
+.section-1Style24.active {
+    height: 1040px;
+    transition: .5s;
+}
+
+.section-1Style24.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style24.active .iconDespliegue24 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style24 .iconDespliegue24 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style24.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style24 h2 i {
+    color: #89b8ee;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style24 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style24.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style24 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(13, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style24 .displayNone {
+    display: none;
+}
+
+.section-1Style24.active .displayNone {
+    display: grid;
+}
+
+.section-1Style24.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+
+/* style24 */
+/* style25 */
+
+.section-1Style25.active {
+    height: 374px;
+    transition: .5s;
+}
+
+.section-1Style25.active .divcontainerEstadoSalud {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+}
+
+.section-1Style25.active .iconDespliegue25 {
+    transform: rotate(180deg);
+    transition: .5s;
+    color: #1f3ff3;
+}
+
+.section-1Style25 .iconDespliegue25 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #fff;
+    transition: .5s;
+    font-size: 1.1em;
+    padding: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1Style25.active h2 {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.section-1Style25 h2 i {
+    color: #89b8ee;
+    font-size: 2em;
+    padding-right: 25px;
+}
+
+.section-1Style25 h2 {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: flex-start;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    padding-left: 30px;
+    position: relative;
+}
+
+.section-1Style25.active .divEstadoSalud1 {
+    height: 100%;
+    width: 100%;
+    background: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+.section-1Style25 .containerGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(11, 73px);
+    grid-gap: 1px;
+    background: #000;
+}
+
+
+.section-1Style25 .displayNone {
+    display: none;
+}
+
+.section-1Style25.active .displayNone {
+    display: grid;
+}
+
+.section-1Style25.active .divEstadoSalud1 i {
+    font-size: 1.7em;
+}
+
+
+/* style25 */
+
+/* selector color1 */
+
+.divcontenedorSelectorColor {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+    background: #0007;
+    transform: translateY(1000px);
+}
+
+body.active .divcontenedorSelectorColor {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+    background: #0007;
+    transform: translateY(0);
+    transition: .5s;
+}
+
+body .divcontenedorSelectorColor {
+    transition: .5s;
+}
+
+.seleccionColorEstadoSalud {
+    height: 60vh;
+    width: 100%;
+    background: #151515;
+    position: absolute;
+    border-radius: 40px 40px 0 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seleccionColorEstadoSalud h3 {
+    padding-top: 30px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.seleccionColorEstadoSalud p {
+    color: #fff;
+    font-size: 0.7em;
+    padding-top: 5px;
+}
+
+.divDescripcionColor {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    background: rgb(248, 40, 3);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.contenedorDeLosColoresContenido {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.divGridContainerColores {
+    height: 80px;
+    width: 100%;
+    
+}
+
+
+.div-grafico-peso-grasa{
+    margin: 20px;
+    overflow-x: scroll;
+    border-radius: 14px;
+    
+}
+
+#myChart{
+    width: 4000px;
+    height: 210px;
+    display: block;
+    background: #151515;
+    padding: 10px;
+    color: orangered;
+    border-radius: 14px;
+}
+
+
+.divValorMG{
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.divValorMGP{
+    padding: 10px;
+    border-radius: 50%;
+}
