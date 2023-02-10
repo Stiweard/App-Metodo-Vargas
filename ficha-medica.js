@@ -154,3 +154,12 @@ if(e.target && e.target.className === 'fa-solid fa-chevron-down section-1 iconDe
 })
 
 /* Section deplegable */
+
+
+// let funcionDespliegue = document.querySelectorAll('.item')
+
+// funcionDespliegue.forEach(funcionDespliegue => {
+//     funcionDespliegue.onclick = (e)=>{
+//         funcionDespliegue.classList.toggle('active')
+//     }
+// })

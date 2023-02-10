@@ -32,7 +32,7 @@
 }
 
 .section-1Style23 {
-    margin-bottom: 90px;
+    margin-bottom: 115px;
     border-radius: 0px 0px 30px 30px;
 }
 
@@ -899,7 +899,7 @@
 /* style10 */
 
 .section-1Style10.active {
-    height: 746px;
+    height: 1040px;
     transition: .5s;
 }
 
@@ -972,7 +972,7 @@
 .section-1Style10 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(9, 73px);
+    grid-template-rows: repeat(13, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -1189,7 +1189,7 @@
 /* style13 */
 
 .section-1Style13.active {
-    height: 596px;
+    height: 670px;
     transition: .5s;
 }
 
@@ -1262,7 +1262,7 @@
 .section-1Style13 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(7, 73px);
+    grid-template-rows: repeat(8, 73px);
     grid-gap: 1px;
     background: #000;
 }
