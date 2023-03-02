@@ -103,7 +103,7 @@ let arrayInfoBasica = {
         "fase": 1,
         "nivel": 1,
         "edad": 23,
-        "semana": 90
+        "semana": 93
     },
     "measures": {
         "peso": {
@@ -123,7 +123,8 @@ let arrayInfoBasica = {
             "76": 80,
             "77": 73,
             "78": 72,
-            "80": 60
+            "80": 60,
+            "92": 74.6
         },
         "grasab": {
             "1": 0,
@@ -142,7 +143,8 @@ let arrayInfoBasica = {
             "76": 0,
             "77": 0,
             "78": 0,
-            "80": 0
+            "80": 0,
+            "92": 24.07
         },
         "musculo": {
             "1": 0,
@@ -161,19 +163,9 @@ let arrayInfoBasica = {
             "76": 0,
             "77": 0,
             "78": 0,
-            "80": 0
+            "80": 0,
+            "92": 53.76
         }
-    },
-    "feeding": {
-        "1": 1.875,
-        "71": 1.875,
-        "72": 3.375,
-        "73": 2.25,
-        "74": 0.375,
-        "75": 2.625,
-        "76": 0.125,
-        "79": 1.25,
-        "80": 3.75
     },
     "exercises": {
         "1": 0,
@@ -189,10 +181,15 @@ let arrayInfoBasica = {
         "79": 3,
         "81": 0
     },
+    "diario": {
+        "emociones": {
+            "2": 4
+        }
+    },
     "monthly": {
-        "alimentacion": 0.22,
-        "ejercicios": 0.22,
-        "emociones": 0.22
+        "alimentacion": 0,
+        "ejercicios": 0,
+        "emociones": 0.06
     },
     "emotions": {
         "actitudes": {
@@ -205,7 +202,7 @@ let arrayInfoBasica = {
             "71": 5,
             "77": 0.6,
             "80": 0.4,
-            "89": 5
+            "92": 5
         },
         "adiciones": {
             "1": 2.33,
@@ -215,7 +212,7 @@ let arrayInfoBasica = {
             "65": 2.33,
             "71": 5,
             "72": 2,
-            "89": 4
+            "92": 0.33
         },
         "ambiente": {
             "1": 4.14,
@@ -225,7 +222,7 @@ let arrayInfoBasica = {
             "65": 3.71,
             "71": 4.86,
             "72": 2.43,
-            "89": 5
+            "92": 5
         },
         "resumen": {
             "1": 2.49,
@@ -238,7 +235,7 @@ let arrayInfoBasica = {
             "72": 1.48,
             "77": 0.2,
             "80": 0.13,
-            "89": 4.67
+            "92": 3.44
         }
     },
     "timeline": {
@@ -255,6 +252,7 @@ let arrayInfoBasica = {
     },
     "notifications": {
         "notas": 1,
+        "alimentacion": 1,
         "ejercicios": 1,
         "emociones": 3
     }
@@ -279,7 +277,9 @@ let arrayInfoGeneral = {
                 "55": 1,
                 "71": 5,
                 "75": 3,
-                "79": 4
+                "79": 4,
+                "89": 2,
+                "90": 1
             },
             "avance": {
                 "1": 1,
@@ -298,10 +298,12 @@ let arrayInfoGeneral = {
                 "72": 5,
                 "73": 4,
                 "75": 3,
-                "79": 5
+                "79": 5,
+                "89": 2,
+                "90": 1
             },
             "imv": {
-                "89": 35
+                "92": 5
             }
         },
         "mediciones": {
@@ -320,7 +322,8 @@ let arrayInfoGeneral = {
                 "76": 80,
                 "77": 73,
                 "78": 72,
-                "80": 60
+                "80": 60,
+                "92": 74.6
             },
             "cintura": {
                 "1": 59,
@@ -352,7 +355,8 @@ let arrayInfoGeneral = {
             "grasab": {
                 "5": 10,
                 "71": 100,
-                "72": 11
+                "72": 11,
+                "92": 24.07
             },
             "agua": {
                 "5": 30,
@@ -362,7 +366,8 @@ let arrayInfoGeneral = {
             "musculo": {
                 "5": 35,
                 "71": 100,
-                "72": 15
+                "72": 15,
+                "92": 53.76
             },
             "grasakg": {
                 "5": 40,
@@ -384,67 +389,32 @@ let arrayInfoGeneral = {
                 "74": 25
             },
             "fecha_r": {
-                "1": "2023-02-04 12:28:58",
-                "2": "2023-02-04 12:28:58",
-                "5": "2023-02-04 12:28:58",
-                "14": "2023-02-04 12:28:58",
-                "57": "2023-02-04 12:28:58",
-                "61": "2023-02-04 12:28:58",
-                "62": "2023-02-04 12:28:58",
-                "69": "2023-02-04 12:28:58",
-                "70": "2023-02-04 12:28:58",
-                "71": "2023-02-04 12:28:58",
-                "72": "2023-02-04 12:28:58",
-                "73": "2023-02-04 12:28:58",
-                "74": "2023-02-04 12:28:58",
-                "76": "2023-02-04 12:28:58",
-                "77": "2023-02-04 12:28:58",
-                "78": "2023-02-04 12:28:58",
-                "80": "2023-02-04 12:28:58",
-                "88": "2023-02-06 04:09:11",
-                "89": "2023-02-06 04:08:57"
-            },
-            "grasa": {
-                "1": 6,
-                "2": 2,
-                "5": 28,
-                "14": 6,
-                "71": 30,
-                "72": 7,
-                "73": 8,
-                "74": 9,
-                "77": 7
-            },
-            "cmporsemana": {
-                "2": -45,
-                "5": 95,
-                "70": -55,
-                "71": 41,
-                "72": -35,
-                "73": 1,
-                "74": 1,
-                "76": -60,
-                "77": 60,
-                "80": -62
-            },
-            "gporsemana": {
-                "2": -28,
-                "5": 28,
-                "70": -2,
-                "71": 24,
-                "72": -21,
-                "73": 1,
-                "74": 1,
-                "76": -7,
-                "77": 7,
-                "80": -9
+                "1": "2023-02-26 14:26:47",
+                "2": "2023-02-26 14:26:47",
+                "5": "2023-02-26 14:26:47",
+                "14": "2023-02-26 14:26:47",
+                "57": "2023-02-26 14:26:47",
+                "61": "2023-02-26 14:26:47",
+                "62": "2023-02-26 14:26:47",
+                "69": "2023-02-26 14:26:47",
+                "70": "2023-02-26 14:26:47",
+                "71": "2023-02-26 14:26:47",
+                "72": "2023-02-26 14:26:47",
+                "73": "2023-02-26 14:26:47",
+                "74": "2023-02-26 14:26:47",
+                "76": "2023-02-26 14:26:47",
+                "77": "2023-02-26 14:26:47",
+                "78": "2023-02-26 14:26:47",
+                "80": "2023-02-26 14:26:47",
+                "92": "2023-02-26 19:46:10"
             },
             "gbporsemana": {
                 "2": -100,
                 "5": 10,
                 "71": 100,
                 "72": 1,
-                "73": -11
+                "73": -11,
+                "92": 24
             },
             "kgporsemana": {
                 "2": 11,
@@ -462,7 +432,7 @@ let arrayInfoGeneral = {
                 "77": 23,
                 "78": -8,
                 "80": 24,
-                "89": -72
+                "92": 2
             }
         },
         "actitudes": {
@@ -476,7 +446,7 @@ let arrayInfoGeneral = {
                 "71": 5,
                 "77": 3,
                 "80": 1,
-                "89": 5
+                "92": 5
             },
             "c2": {
                 "1": 1,
@@ -487,7 +457,7 @@ let arrayInfoGeneral = {
                 "65": 1,
                 "71": 5,
                 "80": 1,
-                "89": 5
+                "92": 5
             },
             "c3": {
                 "1": 1,
@@ -497,14 +467,14 @@ let arrayInfoGeneral = {
                 "64": 1,
                 "65": 1,
                 "71": 5,
-                "89": 5
+                "92": 5
             },
             "c4": {
                 "1": 1,
                 "2": 1,
                 "21": 1,
                 "71": 5,
-                "89": 5
+                "92": 5
             },
             "c5": {
                 "1": 1,
@@ -514,7 +484,7 @@ let arrayInfoGeneral = {
                 "64": 1,
                 "65": 1,
                 "71": 5,
-                "89": 5
+                "92": 5
             }
         },
         "ambiente": {
@@ -526,7 +496,7 @@ let arrayInfoGeneral = {
                 "65": 5,
                 "71": 5,
                 "72": 1,
-                "89": 5
+                "92": 5
             },
             "b2": {
                 "1": 5,
@@ -536,7 +506,7 @@ let arrayInfoGeneral = {
                 "65": 5,
                 "71": 5,
                 "72": 1,
-                "89": 5
+                "92": 5
             },
             "b3": {
                 "1": 5,
@@ -546,7 +516,7 @@ let arrayInfoGeneral = {
                 "65": 5,
                 "71": 5,
                 "72": 4,
-                "89": 5
+                "92": 5
             },
             "b4": {
                 "1": 5,
@@ -556,7 +526,7 @@ let arrayInfoGeneral = {
                 "65": 5,
                 "71": 4,
                 "72": 4,
-                "89": 5
+                "92": 5
             },
             "b5": {
                 "1": 5,
@@ -566,13 +536,13 @@ let arrayInfoGeneral = {
                 "65": 5,
                 "71": 5,
                 "72": 4,
-                "89": 5
+                "92": 5
             },
             "b6": {
                 "1": 3,
                 "71": 5,
                 "72": 3,
-                "89": 5
+                "92": 5
             },
             "b7": {
                 "1": 1,
@@ -581,161 +551,96 @@ let arrayInfoGeneral = {
                 "64": 1,
                 "65": 1,
                 "71": 5,
-                "89": 5
+                "92": 5
             }
         },
-        "adiciones": {
-            "a1": {
-                "1": 1,
-                "2": 1,
-                "63": 1,
-                "64": 1,
-                "65": 1,
-                "71": 5,
-                "72": 2,
-                "89": 2
+        "auditorias": {
+            "aps": {
+                "92": 2
             },
-            "a2": {
-                "1": 5,
-                "2": 5,
-                "63": 5,
-                "64": 5,
-                "65": 5,
-                "71": 5,
-                "72": 3,
-                "89": 5
+            "apsi": {
+                "92": 5
             },
-            "a3": {
-                "1": 1,
-                "2": 1,
-                "63": 1,
-                "64": 1,
-                "65": 1,
-                "71": 5,
-                "72": 1,
-                "89": 5
-            }
-        },
-        "bach": {
-            "holly": {
-                "89": 1
+            "anu": {
+                "92": 3
             },
-            "chicory": {
-                "89": 1
+            "aej": {
+                "92": 5
             },
-            "agrimony": {
-                "89": 1
+            "aea": {
+                "92": 2
             },
-            "rock_water": {
-                "89": 1
+            "amc": {
+                "92": 1
             },
-            "aspen": {
-                "89": 1
+            "amed": {
+                "92": 2
             },
-            "larch": {
-                "89": 1
+            "arel": {
+                "92": 4
             },
-            "gorse": {
-                "89": 1
+            "abal": {
+                "92": 5
             },
-            "wild_oat": {
-                "89": 1
+            "awa": {
+                "92": 2
             },
-            "heather": {
-                "89": 1
+            "aan": {
+                "92": 1
             },
-            "chesnut_bud": {
-                "89": 1
+            "apc": {
+                "92": 5
             },
-            "white_chesnut": {
-                "89": 1
+            "apr": {
+                "92": 3
             },
-            "sweet_chesnut": {
-                "89": 1
+            "ali": {
+                "92": 1
             },
-            "red_chesnut": {
-                "89": 1
+            "abe": {
+                "92": 3
             },
-            "centaury": {
-                "89": 1
+            "atb": {
+                "92": 4
             },
-            "cherry_plum": {
-                "89": 1
+            "fpd": {
+                "92": 4
             },
-            "cerato": {
-                "89": 1
+            "atl": {
+                "92": 5
             },
-            "clematis": {
-                "89": 1
+            "atfb": {
+                "92": 5
             },
-            "star_of_bethlehem": {
-                "89": 1
+            "alg": {
+                "92": 2
             },
-            "gentian": {
-                "89": 1
+            "tlitt": {
+                "92": 1
             },
-            "beech": {
-                "89": 1
+            "tber": {
+                "92": 3
             },
-            "rock_rose": {
-                "89": 1
+            "snac": {
+                "92": 2
             },
-            "hornbeam": {
-                "89": 1
+            "lab": {
+                "92": 4
             },
-            "impatiens": {
-                "89": 1
+            "afl": {
+                "92": 2
             },
-            "honeysuckle": {
-                "89": 1
+            "pau": {
+                "92": 1
             },
-            "crab_apple": {
-                "89": 1
+            "par": {
+                "92": 5
             },
-            "mimulus": {
-                "89": 1
-            },
-            "mustard": {
-                "89": 1
-            },
-            "walnut": {
-                "89": 1
-            },
-            "olive": {
-                "89": 1
-            },
-            "elm": {
-                "89": 1
-            },
-            "pine": {
-                "89": 1
-            },
-            "oak": {
-                "89": 1
-            },
-            "wild_rose": {
-                "89": 1
-            },
-            "willow": {
-                "89": 1
-            },
-            "scleranthus": {
-                "89": 1
-            },
-            "verbain": {
-                "89": 1
-            },
-            "vine": {
-                "89": 1
-            },
-            "water_violet": {
-                "89": 1
-            },
-            "rescue_remedy": {
-                "89": 1
+            "ar": {
+                "92": 2
             },
             "fecha_r": {
-                "89": "2023-02-06 23:45:08"
+                "92": "2023-02-27 14:43:01"
             }
         },
         "alimentos": {
@@ -751,21 +656,16 @@ let arrayInfoGeneral = {
                 "76": 2,
                 "79": 4,
                 "80": 2,
-                "89": 1,
-                "90": 1
-            },
-            "cumplimiento": {
-                "89": 5,
-                "90": 5
-            },
-            "apetito": {
-                "89": 5
+                "92": 1
             },
             "pdulces": {
-                "89": 5
+                "92": 1
             },
             "pharinas": {
-                "89": 5
+                "92": 1
+            },
+            "cumplimiento": {
+                "92": 1
             },
             "granos": {
                 "71": 5,
@@ -835,12 +735,12 @@ let arrayInfoGeneral = {
                 "79": 5,
                 "80": 5
             },
-            "proteninasf3": {
-                "75": 3,
-                "79": 5
-            },
             "proteninasf2": {
                 "75": 4,
+                "79": 5
+            },
+            "proteninasf3": {
+                "75": 3,
                 "79": 5
             },
             "vegetales": {
@@ -869,6 +769,40 @@ let arrayInfoGeneral = {
             },
             "grasasf3": {
                 "75": 2
+            },
+            "a1": {
+                "1": 1,
+                "2": 1,
+                "63": 1,
+                "64": 1,
+                "65": 1,
+                "71": 5,
+                "72": 2
+            },
+            "a2": {
+                "1": 5,
+                "2": 5,
+                "63": 5,
+                "64": 5,
+                "65": 5,
+                "71": 5,
+                "72": 3
+            },
+            "a3": {
+                "1": 1,
+                "2": 1,
+                "63": 1,
+                "64": 1,
+                "65": 1,
+                "71": 5,
+                "72": 1,
+                "92": 1
+            }
+        },
+        "administracion": {
+            "honorarios": {
+                "71": 5,
+                "73": 3
             }
         },
         "ejercicios": {
@@ -885,7 +819,7 @@ let arrayInfoGeneral = {
                 "77": 1,
                 "79": 5,
                 "81": 1,
-                "89": 1
+                "92": 1
             },
             "calentamiento": {
                 "1": 2,
@@ -894,10 +828,13 @@ let arrayInfoGeneral = {
                 "74": 5
             },
             "movimiento": {
-                "89": 5
+                "92": 1
             },
             "fuerza": {
                 "1": 1,
+                "71": 5
+            },
+            "aerobicos": {
                 "71": 5
             },
             "movilidad": {
@@ -907,6 +844,45 @@ let arrayInfoGeneral = {
             "cardio": {
                 "71": 5
             },
+            "crossfit": {
+                "71": 5
+            },
+            "saltodoble": {
+                "71": 5
+            },
+            "burpees": {
+                "71": 5
+            },
+            "artesmarciales": {
+                "71": 5
+            },
+            "boxeo": {
+                "71": 5
+            },
+            "baile": {
+                "71": 5
+            },
+            "bandas": {
+                "71": 5,
+                "73": 1,
+                "74": 5,
+                "92": 1
+            },
+            "taebo": {
+                "71": 5
+            },
+            "natacion": {
+                "71": 5
+            },
+            "entrenador": {
+                "71": 5
+            },
+            "abdomen": {
+                "71": 5
+            },
+            "gluteos": {
+                "71": 5
+            },
             "mv": {
                 "71": 5,
                 "72": 1,
@@ -914,6 +890,37 @@ let arrayInfoGeneral = {
                 "74": 5,
                 "77": 1,
                 "79": 3
+            },
+            "gimnasio": {
+                "71": 5
+            },
+            "isometricos": {
+                "71": 5,
+                "81": 1
+            },
+            "pesocorporal": {
+                "71": 5
+            },
+            "pesas": {
+                "71": 5,
+                "81": 5
+            },
+            "ligas": {
+                "71": 5,
+                "73": 5,
+                "74": 5,
+                "81": 1
+            },
+            "caminar": {
+                "71": 5,
+                "74": 5,
+                "92": 1
+            },
+            "tenis": {
+                "71": 5
+            },
+            "bicicleta": {
+                "71": 5
             }
         },
         "sintomas": {
@@ -1225,19 +1232,33 @@ let arrayInfoGeneral = {
         },
         "resumen": {
             "alimentos": {
-                "1": 3,
-                "71": 3,
-                "72": 4,
+                "1": 2,
+                "60": 0,
+                "61": 0,
+                "71": 2,
+                "72": 3,
                 "73": 3,
-                "75": 3,
+                "74": 0,
+                "75": 2,
+                "76": 0,
                 "79": 1,
-                "80": 4
+                "80": 4,
+                "92": 0
             },
             "ejercicios": {
+                "1": 0,
+                "21": 0,
+                "57": 0,
+                "58": 0,
                 "71": 5,
+                "72": 0,
                 "73": 1,
                 "74": 1,
-                "81": 1
+                "76": 0,
+                "77": 0,
+                "79": 0,
+                "81": 1,
+                "92": 0
             },
             "actitudes": {
                 "1": 1,
@@ -1248,7 +1269,8 @@ let arrayInfoGeneral = {
                 "65": 1,
                 "71": 5,
                 "77": 1,
-                "89": 5
+                "80": 0,
+                "92": 5
             },
             "ambiente": {
                 "1": 4,
@@ -1258,21 +1280,12 @@ let arrayInfoGeneral = {
                 "65": 4,
                 "71": 5,
                 "72": 2,
-                "89": 5
-            },
-            "adiciones": {
-                "1": 2,
-                "2": 2,
-                "63": 2,
-                "64": 2,
-                "65": 2,
-                "71": 5,
-                "72": 2,
-                "89": 4
+                "92": 5
             },
             "interconsultas": {
                 "71": 5,
-                "72": 1
+                "72": 1,
+                "81": 0
             },
             "presenciap": {
                 "71": 5,
@@ -1287,9 +1300,7 @@ let arrayInfoGeneral = {
             "agregaralimentos": {
                 "5": 20,
                 "61": 15,
-                "71": 100,
-                "88": 88,
-                "89": 11
+                "71": 100
             },
             "agregaralimentosdecision": {
                 "5": 2,
@@ -1300,89 +1311,6 @@ let arrayInfoGeneral = {
                 "5": 20,
                 "61": 31,
                 "71": 100
-            }
-        },
-        "cardio": {
-            "aerobicos": {
-                "71": 5
-            },
-            "crossfit": {
-                "71": 5
-            },
-            "saltodoble": {
-                "71": 5
-            },
-            "burpees": {
-                "71": 5
-            },
-            "artesmarciales": {
-                "71": 5
-            },
-            "boxeo": {
-                "71": 5
-            },
-            "baile": {
-                "71": 5
-            },
-            "bandas": {
-                "71": 5,
-                "73": 1,
-                "74": 5,
-                "89": 4
-            },
-            "taebo": {
-                "71": 5
-            },
-            "natacion": {
-                "71": 5
-            },
-            "entrenador": {
-                "71": 5
-            },
-            "gimnasio": {
-                "71": 5
-            },
-            "caminar": {
-                "71": 5,
-                "74": 5,
-                "89": 3
-            },
-            "tenis": {
-                "71": 5
-            },
-            "bicicleta": {
-                "71": 5
-            }
-        },
-        "fuerza": {
-            "abdomen": {
-                "71": 5
-            },
-            "gluteos": {
-                "71": 5
-            },
-            "isometricos": {
-                "71": 5,
-                "81": 1
-            },
-            "pesocorporal": {
-                "71": 5
-            },
-            "pesas": {
-                "71": 5,
-                "81": 5
-            },
-            "ligas": {
-                "71": 5,
-                "73": 5,
-                "74": 5,
-                "81": 1
-            }
-        },
-        "administracion": {
-            "honorarios": {
-                "71": 5,
-                "73": 3
             }
         }
     },
@@ -8493,10 +8421,6 @@ let arrayAyuda = [
     {
         "texto": "Rojo:                   No hay contacto\nAnaranjado:       Está aumentando de peso\nAmarillo.             No pierde peso\nVerde claro        Pierde peso entre 2 a 3 kg x mes.\nVerde obscuro: Pierde  peso + de 4 kg",
         "color": 1
-    },
-    {
-        "texto": "sdlksdfkbsdkkbfsd fsd hfsjdv fshdvfsjkdhfsh dfj sdf ksdf",
-        "color": 1
     }
 ]
 
@@ -8750,7 +8674,8 @@ if (window.location.pathname == '/resumen.html') {
 
 
 
-
+    console.log(arrayInfoBasica)
+console.log(arrayInfoGeneral)
 
 
     console.log(arrayAyuda)
@@ -8761,151 +8686,183 @@ if (window.location.pathname == '/resumen.html') {
     console.log(arrayInfoGeneral.registros.calificacion.avance)
 
 
-    function crearCirculoValor(valorAComparar, valorComparado, divSelecionado, colorDelCirculo) {
+    function crearCirculoValor(valorAComparar, valorComparado, divSelecionado, colorDelCirculo,claseIndentificador) {
 
         if (valorAComparar == valorComparado) {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMG')
+            divCV.classList.add(claseIndentificador)
             divCV.style.background = colorDelCirculo
             variableDiv.appendChild(divCV)
         }
     }
 
-    function crearloValor(valorAComparar, divSelecionado) {
+    function crearloValor(valorAComparar, divSelecionado,claseIndentificador) {
 
         if (valorAComparar == undefined) {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMGP')
-            divCV.innerHTML = '<p>0</p>'
+            const pCV = document.createElement('p')
+            pCV.classList.add(claseIndentificador)
+            divCV.innerHTML = '0'
+            divCV.appendChild(pCV)
             variableDiv.appendChild(divCV)
         } else {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMGP')
-            divCV.innerHTML = `<p>${valorAComparar}</p>`
+            const pCV = document.createElement('p')
+            pCV.classList.add(claseIndentificador)
+            pCV.innerHTML = valorAComparar
+            divCV.appendChild(pCV)
             variableDiv.appendChild(divCV)
         }
     }
-    function crearloValor1(valorAComparar, divSelecionado) {
+    function crearloValor1(valorAComparar, divSelecionado, claseIndentificador) {
 
         if (valorAComparar == undefined) {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMGP')
-            divCV.innerHTML = '<p>0%</p>'
+            const pCV = document.createElement('p')
+            pCV.classList.add(claseIndentificador)
+            pCV.innerHTML = '0%'
+            divCV.appendChild(pCV)
             variableDiv.appendChild(divCV)
         } else {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMGP')
-            divCV.innerHTML = `<p>${valorAComparar}%</p>`
+            const pCV = document.createElement('p')
+            pCV.classList.add(claseIndentificador)
+            pCV.innerHTML = valorAComparar
+            divCV.appendChild(pCV)
             variableDiv.appendChild(divCV)
         }
     }
-    function crearloValor2(valorAComparar, divSelecionado) {
+    function crearloValor2(valorAComparar, divSelecionado,claseIndentificador) {
 
         if (valorAComparar == undefined) {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMGP')
-            divCV.innerHTML = '<p>0kg</p>'
+            const pCV = document.createElement('p')
+            pCV.classList.add(claseIndentificador)
+            divCV.innerHTML = '0kg'
+            divCV.appendChild(pCV)
             variableDiv.appendChild(divCV)
         } else {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMGP')
-            divCV.innerHTML = `<p>${valorAComparar}kg</p>`
+            const pCV = document.createElement('p')
+            pCV.classList.add(claseIndentificador)
+            pCV.innerHTML = valorAComparar
+            divCV.appendChild(pCV)
             variableDiv.appendChild(divCV)
         }
     }
-    function crearloValor3(valorAComparar, divSelecionado) {
+    function crearloValor3(valorAComparar, divSelecionado,claseIndentificador) {
 
         if (valorAComparar == undefined) {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMGP')
-            divCV.innerHTML = '<p>0cm</p>'
+            const pCV = document.createElement('p')
+            pCV.classList.add(claseIndentificador)
+            pCV.innerHTML = '0cm'
+            divCV.appendChild(pCV)
             variableDiv.appendChild(divCV)
         } else {
             const variableDiv = document.querySelector(divSelecionado)
             const divCV = document.createElement('div')
             divCV.classList.add('divValorMGP')
-            divCV.innerHTML = `<p>${valorAComparar}cm</p>`
+            const pCV = document.createElement('p')
+            pCV.classList.add(claseIndentificador)
+            pCV.innerHTML = valorAComparar
+            divCV.appendChild(pCV)
             variableDiv.appendChild(divCV)
         }
     }
 
-    function simplicarRellenar1(direccionValores, direccionHtml) {
+    function simplicarRellenar1(direccionValores, direccionHtml, divClass) {
 
-        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], undefined, direccionHtml, '#3f3f3f')
-        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 1, direccionHtml, '#f44336')
-        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 2, direccionHtml, '#ff9800')
-        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 3, direccionHtml, '#ffeb3b')
-        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 4, direccionHtml, '#adff2f')
-        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 5, direccionHtml, '#18aeff')
+        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], undefined, direccionHtml, '#3f3f3f',divClass)
+        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 0, direccionHtml, '#3f3f3f',divClass)
+        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 1, direccionHtml, '#f44336',divClass)
+        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 2, direccionHtml, '#ff9800',divClass)
+        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 3, direccionHtml, '#ffeb3b',divClass)
+        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 4, direccionHtml, '#adff2f',divClass)
+        crearCirculoValor(direccionValores[arrayInfoBasica.data.semana], 5, direccionHtml, '#18aeff',divClass)
     }
-    function simplicarRellenar2(direccionValores, direccionHtml) {
+    function simplicarRellenar2(direccionValores, direccionHtml,divClass1) {
 
-        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], undefined, direccionHtml, '#3f3f3f')
-        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 1, direccionHtml, '#f44336')
-        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 2, direccionHtml, '#ff9800')
-        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 3, direccionHtml, '#ffeb3b')
-        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 4, direccionHtml, '#adff2f')
-        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 5, direccionHtml, '#18aeff')
+        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], undefined, direccionHtml, '#3f3f3f',divClass1)
+        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 0, direccionHtml, '#3f3f3f',divClass1)
+        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 1, direccionHtml, '#f44336',divClass1)
+        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 2, direccionHtml, '#ff9800',divClass1)
+        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 3, direccionHtml, '#ffeb3b',divClass1)
+        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 4, direccionHtml, '#adff2f',divClass1)
+        crearCirculoValor(direccionValores[(arrayInfoBasica.data.semana - 1)], 5, direccionHtml, '#18aeff',divClass1)
     }
-    function simplicarRellenar3(direccionValores, direccionHtml) {
+    function simplicarRellenar3(direccionValores, direccionHtml, divClass2) {
 
-        crearCirculoValor(direccionValores[2], undefined, direccionHtml, '#3f3f3f')
-        crearCirculoValor(direccionValores[2], 1, direccionHtml, '#f44336')
-        crearCirculoValor(direccionValores[2], 2, direccionHtml, '#ff9800')
-        crearCirculoValor(direccionValores[2], 3, direccionHtml, '#ffeb3b')
-        crearCirculoValor(direccionValores[2], 4, direccionHtml, '#adff2f')
-        crearCirculoValor(direccionValores[2], 5, direccionHtml, '#18aeff')
+        crearCirculoValor(direccionValores[2], undefined, direccionHtml, '#3f3f3f',divClass2)
+        crearCirculoValor(direccionValores[2], 0, direccionHtml, '#3f3f3f',divClass2)
+        crearCirculoValor(direccionValores[2], 1, direccionHtml, '#f44336',divClass2)
+        crearCirculoValor(direccionValores[2], 2, direccionHtml, '#ff9800',divClass2)
+        crearCirculoValor(direccionValores[2], 3, direccionHtml, '#ffeb3b',divClass2)
+        crearCirculoValor(direccionValores[2], 4, direccionHtml, '#adff2f',divClass2)
+        crearCirculoValor(direccionValores[2], 5, direccionHtml, '#18aeff',divClass2)
     }
-    function simplicarRellenar4(direccionValores, direccionHtml) {
+    function simplicarRellenar4(direccionValores, direccionHtml, divClass3) {
 
-        crearCirculoValor(direccionValores[1], undefined, direccionHtml, '#3f3f3f')
-        crearCirculoValor(direccionValores[1], 1, direccionHtml, '#f44336')
-        crearCirculoValor(direccionValores[1], 2, direccionHtml, '#ff9800')
-        crearCirculoValor(direccionValores[1], 3, direccionHtml, '#ffeb3b')
-        crearCirculoValor(direccionValores[1], 4, direccionHtml, '#adff2f')
-        crearCirculoValor(direccionValores[1], 5, direccionHtml, '#18aeff')
+        crearCirculoValor(direccionValores[1], undefined, direccionHtml, '#3f3f3f',divClass3)
+        crearCirculoValor(direccionValores[1], 0, direccionHtml, '#3f3f3f',divClass3)
+        crearCirculoValor(direccionValores[1], 1, direccionHtml, '#f44336',divClass3)
+        crearCirculoValor(direccionValores[1], 2, direccionHtml, '#ff9800',divClass3)
+        crearCirculoValor(direccionValores[1], 3, direccionHtml, '#ffeb3b',divClass3)
+        crearCirculoValor(direccionValores[1], 4, direccionHtml, '#adff2f',divClass3)
+        crearCirculoValor(direccionValores[1], 5, direccionHtml, '#18aeff',divClass3)
     }
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.resumen.adiciones, '.SelectorAdccion1')
-    simplicarRellenar2(arrayInfoGeneral.registros.resumen.adiciones, '.SelectorAdccion2')
-    simplicarRellenar3(arrayInfoGeneral.registros.resumen.adiciones, '.SelectorAdccion3')
-    simplicarRellenar4(arrayInfoGeneral.registros.resumen.adiciones, '.SelectorAdccion4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.resumen.adiciones, '.SelectorAdccion1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.resumen.adiciones, '.SelectorAdccion2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.resumen.adiciones, '.SelectorAdccion3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.resumen.adiciones, '.SelectorAdccion4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.resumen.actitudes, '.SelectorActitudes1')
-    simplicarRellenar2(arrayInfoGeneral.registros.resumen.actitudes, '.SelectorActitudes2')
-    simplicarRellenar3(arrayInfoGeneral.registros.resumen.actitudes, '.SelectorActitudes3')
-    simplicarRellenar4(arrayInfoGeneral.registros.resumen.actitudes, '.SelectorActitudes4')
+    simplicarRellenar1(arrayInfoGeneral.registros.resumen.actitudes, '.SelectorActitudes1','Actitudes1')
+    simplicarRellenar2(arrayInfoGeneral.registros.resumen.actitudes, '.SelectorActitudes2','Actitudes2')
+    simplicarRellenar3(arrayInfoGeneral.registros.resumen.actitudes, '.SelectorActitudes3','Actitudes3')
+    simplicarRellenar4(arrayInfoGeneral.registros.resumen.actitudes, '.SelectorActitudes4','Actitudes4')
 
     simplicarRellenar1(arrayInfoGeneral.registros.calificacion.general, '.selectorGeneral1')
     simplicarRellenar2(arrayInfoGeneral.registros.calificacion.general, '.selectorGeneral2')
     simplicarRellenar3(arrayInfoGeneral.registros.calificacion.general, '.selectorGeneral3')
     simplicarRellenar4(arrayInfoGeneral.registros.calificacion.general, '.selectorGeneral4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.calificacion.avance, '.selectorAvance1')
-    simplicarRellenar2(arrayInfoGeneral.registros.calificacion.avance, '.selectorAvance2')
-    simplicarRellenar3(arrayInfoGeneral.registros.calificacion.avance, '.selectorAvance3')
-    simplicarRellenar4(arrayInfoGeneral.registros.calificacion.avance, '.selectorAvance4')
+    simplicarRellenar1(arrayInfoGeneral.registros.calificacion.avance, '.selectorAvance1','Avance1')
+    simplicarRellenar2(arrayInfoGeneral.registros.calificacion.avance, '.selectorAvance2','Avance2')
+    simplicarRellenar3(arrayInfoGeneral.registros.calificacion.avance, '.selectorAvance3','Avance3')
+    simplicarRellenar4(arrayInfoGeneral.registros.calificacion.avance, '.selectorAvance4','Avance4')
 
 
 
-    crearloValor(arrayInfoGeneral.registros.calificacion.imv[arrayInfoBasica.data.semana], '.selectorIndmv1')
+    // crearloValor(arrayInfoGeneral.registros.calificacion.imv[arrayInfoBasica.data.semana], '.selectorIndmv1')
 
-    crearloValor(arrayInfoGeneral.registros.calificacion.imv[(arrayInfoBasica.data.semana - 1)], '.selectorIndmv2')
+    // crearloValor(arrayInfoGeneral.registros.calificacion.imv[(arrayInfoBasica.data.semana - 1)], '.selectorIndmv2')
 
-    crearloValor(arrayInfoGeneral.registros.calificacion.imv[2], '.selectorIndmv3')
+    // crearloValor(arrayInfoGeneral.registros.calificacion.imv[2], '.selectorIndmv3')
 
-    crearloValor(arrayInfoGeneral.registros.calificacion.imv[1], '.selectorIndmv4')
+    // crearloValor(arrayInfoGeneral.registros.calificacion.imv[1], '.selectorIndmv4')
 
-
+    simplicarRellenar1(arrayInfoGeneral.registros.calificacion.imv, '.selectorIndmv1','Indmv1')
+    simplicarRellenar2(arrayInfoGeneral.registros.calificacion.imv, '.selectorIndmv2','Indmv2')
+    simplicarRellenar3(arrayInfoGeneral.registros.calificacion.imv, '.selectorIndmv3','Indmv3')
+    simplicarRellenar4(arrayInfoGeneral.registros.calificacion.imv, '.selectorIndmv4','Indmv4')
 
     document.querySelector('.MetasPeso').innerHTML = `<p> Peso <br>(${arrayInfoGeneral.metas.peso}kg)</p>`
     document.querySelector('.metasGrasa').innerHTML = `<p> Grasa <br>(${arrayInfoGeneral.metas.grasa}%)</p>`
@@ -8926,23 +8883,23 @@ if (window.location.pathname == '/resumen.html') {
 
 
 
-    crearloValor1(arrayInfoGeneral.registros.mediciones.grasa[arrayInfoBasica.data.semana], '.selectorGrasa1')
+    // crearloValor1(arrayInfoGeneral.registros.mediciones.grasa[arrayInfoBasica.data.semana], '.selectorGrasa1')
 
-    crearloValor1(arrayInfoGeneral.registros.mediciones.grasa[(arrayInfoBasica.data.semana - 1)], '.selectorGrasa2')
+    // crearloValor1(arrayInfoGeneral.registros.mediciones.grasa[(arrayInfoBasica.data.semana - 1)], '.selectorGrasa2')
 
-    crearloValor1(arrayInfoGeneral.registros.mediciones.grasa[2], '.selectorGrasa3')
+    // crearloValor1(arrayInfoGeneral.registros.mediciones.grasa[2], '.selectorGrasa3')
 
-    crearloValor1(arrayInfoGeneral.registros.mediciones.grasa[1], '.selectorGrasa4')
+    // crearloValor1(arrayInfoGeneral.registros.mediciones.grasa[1], '.selectorGrasa4')
 
 
 
-    crearloValor1(arrayInfoGeneral.registros.mediciones.musculo[arrayInfoBasica.data.semana], '.selectorMusculos1')
+    crearloValor1(arrayInfoGeneral.registros.mediciones.musculo[arrayInfoBasica.data.semana], '.selectorMusculos1','Musculos1')
 
-    crearloValor1(arrayInfoGeneral.registros.mediciones.musculo[(arrayInfoBasica.data.semana - 1)], '.selectorMusculos2')
+    crearloValor1(arrayInfoGeneral.registros.mediciones.musculo[(arrayInfoBasica.data.semana - 1)], '.selectorMusculos2','Musculos2')
 
-    crearloValor1(arrayInfoGeneral.registros.mediciones.musculo[2], '.selectorMusculos3')
+    crearloValor1(arrayInfoGeneral.registros.mediciones.musculo[2], '.selectorMusculos3','Musculos3')
 
-    crearloValor1(arrayInfoGeneral.registros.mediciones.musculo[1], '.selectorMusculos4')
+    crearloValor1(arrayInfoGeneral.registros.mediciones.musculo[1], '.selectorMusculos4','Musculos4')
 
     /* calorias en desarrollo */
 
@@ -8956,13 +8913,13 @@ if (window.location.pathname == '/resumen.html') {
 
     /* pasos en desarrollo */
 
-    // crearloValor2(arrayInfoGeneral.registros.mediciones.caloria[arrayInfoBasica.data.semana],'.selctorPasos1')
+    crearloValor1(arrayInfoGeneral.registros.mediciones.grasab[arrayInfoBasica.data.semana],'.selectorGrasa1')
 
-    // crearloValor2(arrayInfoGeneral.registros.mediciones.caloria[(arrayInfoBasica.data.semana - 1)],'.selctorPasos2')
+    crearloValor1(arrayInfoGeneral.registros.mediciones.grasab[(arrayInfoBasica.data.semana - 1)],'.selectorGrasa2')
 
-    // crearloValor2(arrayInfoGeneral.registros.mediciones.caloria[1],'.selctorPasos3')
+    crearloValor1(arrayInfoGeneral.registros.mediciones.grasab[1],'.selectorGrasa3')
 
-    // crearloValor2(arrayInfoGeneral.registros.mediciones.caloria[2],'.selctorPasos4')
+    crearloValor1(arrayInfoGeneral.registros.mediciones.grasab[2],'.selectorGrasa4')
 
 
     /* Ritmo C en desarrollo */
@@ -9017,22 +8974,22 @@ if (window.location.pathname == '/resumen.html') {
     crearloValor(arrayInfoGeneral.registros.mediciones.estres[1], '.selectorEstres4')
 
 
-    crearloValor(arrayInfoGeneral.registros.mediciones.suenop[arrayInfoBasica.data.semana], '.selectorSueno1')
+    crearloValor(arrayInfoGeneral.registros.mediciones.suenop[arrayInfoBasica.data.semana], '.selectorSueno1','Sueno1')
 
-    crearloValor(arrayInfoGeneral.registros.mediciones.suenop[(arrayInfoBasica.data.semana - 1)], '.selectorSueno2')
+    crearloValor(arrayInfoGeneral.registros.mediciones.suenop[(arrayInfoBasica.data.semana - 1)], '.selectorSueno2','Sueno2')
 
-    crearloValor(arrayInfoGeneral.registros.mediciones.suenop[2], '.selectorSueno3')
+    crearloValor(arrayInfoGeneral.registros.mediciones.suenop[2], '.selectorSueno3','Sueno3')
 
-    crearloValor(arrayInfoGeneral.registros.mediciones.suenop[1], '.selectorSueno4')
+    crearloValor(arrayInfoGeneral.registros.mediciones.suenop[1], '.selectorSueno4','Sueno4')
 
 
-    crearloValor3(arrayInfoGeneral.registros.mediciones.cmporsemana[arrayInfoBasica.data.semana], '.selectorCP1')
+    // crearloValor3(arrayInfoGeneral.registros.mediciones.cmporsemana[arrayInfoBasica.data.semana], '.selectorCP1')
 
-    crearloValor3(arrayInfoGeneral.registros.mediciones.cmporsemana[(arrayInfoBasica.data.semana - 1)], '.selectorCP2')
+    // crearloValor3(arrayInfoGeneral.registros.mediciones.cmporsemana[(arrayInfoBasica.data.semana - 1)], '.selectorCP2')
 
-    crearloValor3(arrayInfoGeneral.registros.mediciones.cmporsemana[2], '.selectorCP3')
+    // crearloValor3(arrayInfoGeneral.registros.mediciones.cmporsemana[2], '.selectorCP3')
 
-    crearloValor3(arrayInfoGeneral.registros.mediciones.cmporsemana[1], '.selectorCP4')
+    // crearloValor3(arrayInfoGeneral.registros.mediciones.cmporsemana[1], '.selectorCP4')
 
 
 
@@ -9194,271 +9151,271 @@ if (window.location.pathname == '/resumen.html') {
     simplicarRellenar3(arrayInfoGeneral.registros.ambiente.b7, '.SelectorPolitica3')
     simplicarRellenar4(arrayInfoGeneral.registros.ambiente.b7, '.SelectorPolitica4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.adiciones.a1, '.SelectorPdulces1')
-    simplicarRellenar2(arrayInfoGeneral.registros.adiciones.a1, '.SelectorPdulces2')
-    simplicarRellenar3(arrayInfoGeneral.registros.adiciones.a1, '.SelectorPdulces3')
-    simplicarRellenar4(arrayInfoGeneral.registros.adiciones.a1, '.SelectorPdulces4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.adiciones.a1, '.SelectorPdulces1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.adiciones.a1, '.SelectorPdulces2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.adiciones.a1, '.SelectorPdulces3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.adiciones.a1, '.SelectorPdulces4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.adiciones.a2, '.SelectorParinas1')
-    simplicarRellenar2(arrayInfoGeneral.registros.adiciones.a2, '.SelectorParinas2')
-    simplicarRellenar3(arrayInfoGeneral.registros.adiciones.a2, '.SelectorParinas3')
-    simplicarRellenar4(arrayInfoGeneral.registros.adiciones.a2, '.SelectorParinas4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.adiciones.a2, '.SelectorParinas1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.adiciones.a2, '.SelectorParinas2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.adiciones.a2, '.SelectorParinas3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.adiciones.a2, '.SelectorParinas4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.adiciones.a3, '.SelectorCansiedad1')
-    simplicarRellenar2(arrayInfoGeneral.registros.adiciones.a3, '.SelectorCansiedad2')
-    simplicarRellenar3(arrayInfoGeneral.registros.adiciones.a3, '.SelectorCansiedad3')
-    simplicarRellenar4(arrayInfoGeneral.registros.adiciones.a3, '.SelectorCansiedad4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.adiciones.a3, '.SelectorCansiedad1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.adiciones.a3, '.SelectorCansiedad2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.adiciones.a3, '.SelectorCansiedad3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.adiciones.a3, '.SelectorCansiedad4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.holly, '.Selectorholly1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.holly, '.Selectorholly2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.holly, '.Selectorholly3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.holly, '.Selectorholly4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.holly, '.Selectorholly1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.holly, '.Selectorholly2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.holly, '.Selectorholly3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.holly, '.Selectorholly4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.chicory, '.SelectorChicoRy1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.chicory, '.SelectorChicoRy2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.chicory, '.SelectorChicoRy3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.chicory, '.SelectorChicoRy4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.chicory, '.SelectorChicoRy1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.chicory, '.SelectorChicoRy2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.chicory, '.SelectorChicoRy3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.chicory, '.SelectorChicoRy4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.agrimony, '.SelectorAgriMony1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.agrimony, '.SelectorAgriMony2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.agrimony, '.SelectorAgriMony3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.agrimony, '.SelectorAgriMony4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.agrimony, '.SelectorAgriMony1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.agrimony, '.SelectorAgriMony2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.agrimony, '.SelectorAgriMony3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.agrimony, '.SelectorAgriMony4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.rock_water, '.SelectorRockW1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.rock_water, '.SelectorRockW2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.rock_water, '.SelectorRockW3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.rock_water, '.SelectorRockW4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.rock_water, '.SelectorRockW1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.rock_water, '.SelectorRockW2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.rock_water, '.SelectorRockW3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.rock_water, '.SelectorRockW4')
 
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.aspen, '.SelectorAspen1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.aspen, '.SelectorAspen2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.aspen, '.SelectorAspen3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.aspen, '.SelectorAspen4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.aspen, '.SelectorAspen1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.aspen, '.SelectorAspen2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.aspen, '.SelectorAspen3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.aspen, '.SelectorAspen4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.larch, '.SelectorLarch1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.larch, '.SelectorLarch2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.larch, '.SelectorLarch3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.larch, '.SelectorLarch4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.larch, '.SelectorLarch1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.larch, '.SelectorLarch2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.larch, '.SelectorLarch3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.larch, '.SelectorLarch4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.gorse, '.SelectorGorse1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.gorse, '.SelectorGorse2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.gorse, '.SelectorGorse3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.gorse, '.SelectorGorse4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.gorse, '.SelectorGorse1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.gorse, '.SelectorGorse2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.gorse, '.SelectorGorse3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.gorse, '.SelectorGorse4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.wild_oat, '.SelectorWildoat1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.wild_oat, '.SelectorWildoat2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.wild_oat, '.SelectorWildoat3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.wild_oat, '.SelectorWildoat4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.wild_oat, '.SelectorWildoat1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.wild_oat, '.SelectorWildoat2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.wild_oat, '.SelectorWildoat3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.wild_oat, '.SelectorWildoat4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.heather, '.SelectorHeather1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.heather, '.SelectorHeather2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.heather, '.SelectorHeather3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.heather, '.SelectorHeather4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.heather, '.SelectorHeather1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.heather, '.SelectorHeather2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.heather, '.SelectorHeather3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.heather, '.SelectorHeather4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.chesnut_bud, '.SelectorChesNut1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.chesnut_bud, '.SelectorChesNut2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.chesnut_bud, '.SelectorChesNut3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.chesnut_bud, '.SelectorChesNut4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.chesnut_bud, '.SelectorChesNut1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.chesnut_bud, '.SelectorChesNut2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.chesnut_bud, '.SelectorChesNut3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.chesnut_bud, '.SelectorChesNut4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.white_chesnut, '.SelectorWhite1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.white_chesnut, '.SelectorWhite2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.white_chesnut, '.SelectorWhite3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.white_chesnut, '.SelectorWhite4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.white_chesnut, '.SelectorWhite1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.white_chesnut, '.SelectorWhite2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.white_chesnut, '.SelectorWhite3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.white_chesnut, '.SelectorWhite4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.sweet_chesnut, '.SelectorSweet1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.sweet_chesnut, '.SelectorSweet2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.sweet_chesnut, '.SelectorSweet3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.sweet_chesnut, '.SelectorSweet4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.sweet_chesnut, '.SelectorSweet1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.sweet_chesnut, '.SelectorSweet2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.sweet_chesnut, '.SelectorSweet3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.sweet_chesnut, '.SelectorSweet4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.red_chesnut, '.SelectorRedChes1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.red_chesnut, '.SelectorRedChes2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.red_chesnut, '.SelectorRedChes3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.red_chesnut, '.SelectorRedChes4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.red_chesnut, '.SelectorRedChes1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.red_chesnut, '.SelectorRedChes2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.red_chesnut, '.SelectorRedChes3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.red_chesnut, '.SelectorRedChes4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.centaury, '.SelectorCentAury1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.centaury, '.SelectorCentAury2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.centaury, '.SelectorCentAury3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.centaury, '.SelectorCentAury4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.centaury, '.SelectorCentAury1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.centaury, '.SelectorCentAury2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.centaury, '.SelectorCentAury3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.centaury, '.SelectorCentAury4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.cherry_plum, '.SelectorCherryP1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.cherry_plum, '.SelectorCherryP2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.cherry_plum, '.SelectorCherryP3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.cherry_plum, '.SelectorCherryP4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.cerato, '.SelectorCerato1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.cerato, '.SelectorCerato2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.cerato, '.SelectorCerato3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.cerato, '.SelectorCerato4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.clematis, '.SelectorClematis1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.clematis, '.SelectorClematis2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.clematis, '.SelectorClematis3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.clematis, '.SelectorClematis4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.star_of_bethlehem, '.SelectorStarThlehem1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.star_of_bethlehem, '.SelectorStarThlehem2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.star_of_bethlehem, '.SelectorStarThlehem3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.star_of_bethlehem, '.SelectorStarThlehem4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.gentian, '.SelectorGentian1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.gentian, '.SelectorGentian2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.gentian, '.SelectorGentian3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.gentian, '.SelectorGentian4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.beech, '.SelectorBeech1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.beech, '.SelectorBeech2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.beech, '.SelectorBeech3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.beech, '.SelectorBeech4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.rock_rose, '.SelectorRockRose1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.rock_rose, '.SelectorRockRose2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.rock_rose, '.SelectorRockRose3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.rock_rose, '.SelectorRockRose4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.hornbeam, '.SelectorHornBeam1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.hornbeam, '.SelectorHornBeam2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.hornbeam, '.SelectorHornBeam3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.hornbeam, '.SelectorHornBeam4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.cherry_plum, '.SelectorCherryP1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.cherry_plum, '.SelectorCherryP2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.cherry_plum, '.SelectorCherryP3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.cherry_plum, '.SelectorCherryP4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.cerato, '.SelectorCerato1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.cerato, '.SelectorCerato2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.cerato, '.SelectorCerato3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.cerato, '.SelectorCerato4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.clematis, '.SelectorClematis1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.clematis, '.SelectorClematis2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.clematis, '.SelectorClematis3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.clematis, '.SelectorClematis4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.star_of_bethlehem, '.SelectorStarThlehem1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.star_of_bethlehem, '.SelectorStarThlehem2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.star_of_bethlehem, '.SelectorStarThlehem3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.star_of_bethlehem, '.SelectorStarThlehem4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.gentian, '.SelectorGentian1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.gentian, '.SelectorGentian2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.gentian, '.SelectorGentian3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.gentian, '.SelectorGentian4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.beech, '.SelectorBeech1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.beech, '.SelectorBeech2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.beech, '.SelectorBeech3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.beech, '.SelectorBeech4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.rock_rose, '.SelectorRockRose1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.rock_rose, '.SelectorRockRose2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.rock_rose, '.SelectorRockRose3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.rock_rose, '.SelectorRockRose4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.hornbeam, '.SelectorHornBeam1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.hornbeam, '.SelectorHornBeam2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.hornbeam, '.SelectorHornBeam3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.hornbeam, '.SelectorHornBeam4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.impatiens, '.SelectorImpatiens1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.impatiens, '.SelectorImpatiens2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.impatiens, '.SelectorImpatiens3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.impatiens, '.SelectorImpatiens4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.impatiens, '.SelectorImpatiens1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.impatiens, '.SelectorImpatiens2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.impatiens, '.SelectorImpatiens3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.impatiens, '.SelectorImpatiens4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.honeysuckle, '.SelectorHoneysuckle1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.honeysuckle, '.SelectorHoneysuckle2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.honeysuckle, '.SelectorHoneysuckle3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.honeysuckle, '.SelectorHoneysuckle4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.honeysuckle, '.SelectorHoneysuckle1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.honeysuckle, '.SelectorHoneysuckle2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.honeysuckle, '.SelectorHoneysuckle3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.honeysuckle, '.SelectorHoneysuckle4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.crab_apple, '.SelectorCrabAple1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.crab_apple, '.SelectorCrabAple2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.crab_apple, '.SelectorCrabAple3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.crab_apple, '.SelectorCrabAple4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.crab_apple, '.SelectorCrabAple1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.crab_apple, '.SelectorCrabAple2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.crab_apple, '.SelectorCrabAple3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.crab_apple, '.SelectorCrabAple4')
 
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.mimulus, '.SelectorMimulus1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.mimulus, '.SelectorMimulus2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.mimulus, '.SelectorMimulus3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.mimulus, '.SelectorMimulus4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.mustard, '.SelectorMustard1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.mustard, '.SelectorMustard2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.mustard, '.SelectorMustard3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.mustard, '.SelectorMustard4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.walnut, '.SelectorWalnut1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.walnut, '.SelectorWalnut2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.walnut, '.SelectorWalnut3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.walnut, '.SelectorWalnut4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.olive, '.SelectorOlive1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.olive, '.SelectorOlive2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.olive, '.SelectorOlive3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.olive, '.SelectorOlive4')
-
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.elm, '.SelectorElm1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.elm, '.SelectorElm2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.elm, '.SelectorElm3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.elm, '.SelectorElm4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.pine, '.SelectorPine1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.pine, '.SelectorPine2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.pine, '.SelectorPine3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.pine, '.SelectorPine4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.oak, '.SelectorOak1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.oak, '.SelectorOak2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.oak, '.SelectorOak3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.oak, '.SelectorOak4')
-
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.wild_rose, '.SelectorWildRose1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.wild_rose, '.SelectorWildRose2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.wild_rose, '.SelectorWildRose3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.wild_rose, '.SelectorWildRose4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.willow, '.SelectorWillow1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.willow, '.SelectorWillow2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.willow, '.SelectorWillow3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.willow, '.SelectorWillow4')
-
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.scleranthus, '.SelectorScleranthus1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.scleranthus, '.SelectorScleranthus2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.scleranthus, '.SelectorScleranthus3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.scleranthus, '.SelectorScleranthus4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.verbain, '.SelectorVerdain1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.verbain, '.SelectorVerdain2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.verbain, '.SelectorVerdain3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.verbain, '.SelectorVerdain4')
-
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.vine, '.SelectorVine1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.vine, '.SelectorVine2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.vine, '.SelectorVine3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.vine, '.SelectorVine4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.water_violet, '.SelectorWaterV1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.water_violet, '.SelectorWaterV2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.water_violet, '.SelectorWaterV3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.water_violet, '.SelectorWaterV4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.bach.rescue_remedy, '.SelectorRescueRemedy1')
-    simplicarRellenar2(arrayInfoGeneral.registros.bach.rescue_remedy, '.SelectorRescueRemedy2')
-    simplicarRellenar3(arrayInfoGeneral.registros.bach.rescue_remedy, '.SelectorRescueRemedy3')
-    simplicarRellenar4(arrayInfoGeneral.registros.bach.rescue_remedy, '.SelectorRescueRemedy4')
-
-
-    simplicarRellenar1(arrayInfoGeneral.registros.alimentos.fase, '.SelectorFase1')
-    simplicarRellenar2(arrayInfoGeneral.registros.alimentos.fase, '.SelectorFase2')
-    simplicarRellenar3(arrayInfoGeneral.registros.alimentos.fase, '.SelectorFase3')
-    simplicarRellenar4(arrayInfoGeneral.registros.alimentos.fase, '.SelectorFase4')
-
-
-    simplicarRellenar1(arrayInfoGeneral.registros.alimentos.cumplimiento, '.SelectorCumplimientoAF1')
-    simplicarRellenar2(arrayInfoGeneral.registros.alimentos.cumplimiento, '.SelectorCumplimientoAF2')
-    simplicarRellenar3(arrayInfoGeneral.registros.alimentos.cumplimiento, '.SelectorCumplimientoAF3')
-    simplicarRellenar4(arrayInfoGeneral.registros.alimentos.cumplimiento, '.SelectorCumplimientoAF4')
-
-
-    simplicarRellenar1(arrayInfoGeneral.registros.alimentos.apetito, '.SelectorApetitoF1')
-    simplicarRellenar2(arrayInfoGeneral.registros.alimentos.apetito, '.SelectorApetitoF2')
-    simplicarRellenar3(arrayInfoGeneral.registros.alimentos.apetito, '.SelectorApetitoF3')
-    simplicarRellenar4(arrayInfoGeneral.registros.alimentos.apetito, '.SelectorApetitoF4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.alimentos.pdulces, '.SelectorDeseoDulceF1')
-    simplicarRellenar2(arrayInfoGeneral.registros.alimentos.pdulces, '.SelectorDeseoDulceF2')
-    simplicarRellenar3(arrayInfoGeneral.registros.alimentos.pdulces, '.SelectorDeseoDulceF3')
-    simplicarRellenar4(arrayInfoGeneral.registros.alimentos.pdulces, '.SelectorDeseoDulceF4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.alimentos.pharinas, '.SelectorDeseosHarinasF1')
-    simplicarRellenar2(arrayInfoGeneral.registros.alimentos.pharinas, '.SelectorDeseosHarinasF2')
-    simplicarRellenar3(arrayInfoGeneral.registros.alimentos.pharinas, '.SelectorDeseosHarinasF3')
-    simplicarRellenar4(arrayInfoGeneral.registros.alimentos.pharinas, '.SelectorDeseosHarinasF4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.alimentos.proteninas, '.SelectorProteinasF1')
-    simplicarRellenar2(arrayInfoGeneral.registros.alimentos.proteninas, '.SelectorProteinasF2')
-    simplicarRellenar3(arrayInfoGeneral.registros.alimentos.proteninas, '.SelectorProteinasF3')
-    simplicarRellenar4(arrayInfoGeneral.registros.alimentos.proteninas, '.SelectorProteinasF4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.alimentos.vegetales, '.SelectorVegetalesF1')
-    simplicarRellenar2(arrayInfoGeneral.registros.alimentos.vegetales, '.SelectorVegetalesF2')
-    simplicarRellenar3(arrayInfoGeneral.registros.alimentos.vegetales, '.SelectorVegetalesF3')
-    simplicarRellenar4(arrayInfoGeneral.registros.alimentos.vegetales, '.SelectorVegetalesF4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.mimulus, '.SelectorMimulus1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.mimulus, '.SelectorMimulus2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.mimulus, '.SelectorMimulus3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.mimulus, '.SelectorMimulus4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.mustard, '.SelectorMustard1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.mustard, '.SelectorMustard2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.mustard, '.SelectorMustard3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.mustard, '.SelectorMustard4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.walnut, '.SelectorWalnut1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.walnut, '.SelectorWalnut2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.walnut, '.SelectorWalnut3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.walnut, '.SelectorWalnut4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.olive, '.SelectorOlive1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.olive, '.SelectorOlive2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.olive, '.SelectorOlive3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.olive, '.SelectorOlive4')
+
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.elm, '.SelectorElm1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.elm, '.SelectorElm2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.elm, '.SelectorElm3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.elm, '.SelectorElm4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.pine, '.SelectorPine1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.pine, '.SelectorPine2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.pine, '.SelectorPine3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.pine, '.SelectorPine4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.oak, '.SelectorOak1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.oak, '.SelectorOak2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.oak, '.SelectorOak3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.oak, '.SelectorOak4')
+
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.wild_rose, '.SelectorWildRose1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.wild_rose, '.SelectorWildRose2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.wild_rose, '.SelectorWildRose3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.wild_rose, '.SelectorWildRose4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.willow, '.SelectorWillow1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.willow, '.SelectorWillow2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.willow, '.SelectorWillow3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.willow, '.SelectorWillow4')
+
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.scleranthus, '.SelectorScleranthus1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.scleranthus, '.SelectorScleranthus2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.scleranthus, '.SelectorScleranthus3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.scleranthus, '.SelectorScleranthus4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.verbain, '.SelectorVerdain1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.verbain, '.SelectorVerdain2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.verbain, '.SelectorVerdain3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.verbain, '.SelectorVerdain4')
+
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.vine, '.SelectorVine1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.vine, '.SelectorVine2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.vine, '.SelectorVine3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.vine, '.SelectorVine4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.water_violet, '.SelectorWaterV1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.water_violet, '.SelectorWaterV2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.water_violet, '.SelectorWaterV3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.water_violet, '.SelectorWaterV4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.bach.rescue_remedy, '.SelectorRescueRemedy1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.bach.rescue_remedy, '.SelectorRescueRemedy2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.bach.rescue_remedy, '.SelectorRescueRemedy3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.bach.rescue_remedy, '.SelectorRescueRemedy4')
+
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.alimentos.fase, '.SelectorFase1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.alimentos.fase, '.SelectorFase2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.alimentos.fase, '.SelectorFase3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.alimentos.fase, '.SelectorFase4')
+
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.alimentos.cumplimiento, '.SelectorCumplimientoAF1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.alimentos.cumplimiento, '.SelectorCumplimientoAF2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.alimentos.cumplimiento, '.SelectorCumplimientoAF3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.alimentos.cumplimiento, '.SelectorCumplimientoAF4')
+
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.alimentos.apetito, '.SelectorApetitoF1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.alimentos.apetito, '.SelectorApetitoF2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.alimentos.apetito, '.SelectorApetitoF3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.alimentos.apetito, '.SelectorApetitoF4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.alimentos.pdulces, '.SelectorDeseoDulceF1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.alimentos.pdulces, '.SelectorDeseoDulceF2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.alimentos.pdulces, '.SelectorDeseoDulceF3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.alimentos.pdulces, '.SelectorDeseoDulceF4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.alimentos.pharinas, '.SelectorDeseosHarinasF1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.alimentos.pharinas, '.SelectorDeseosHarinasF2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.alimentos.pharinas, '.SelectorDeseosHarinasF3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.alimentos.pharinas, '.SelectorDeseosHarinasF4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.alimentos.proteninas, '.SelectorProteinasF1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.alimentos.proteninas, '.SelectorProteinasF2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.alimentos.proteninas, '.SelectorProteinasF3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.alimentos.proteninas, '.SelectorProteinasF4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.alimentos.vegetales, '.SelectorVegetalesF1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.alimentos.vegetales, '.SelectorVegetalesF2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.alimentos.vegetales, '.SelectorVegetalesF3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.alimentos.vegetales, '.SelectorVegetalesF4')
 
 
     simplicarRellenar1(arrayInfoGeneral.registros.alimentos.grasas, '.SelectorGrasasF1')
@@ -9602,118 +9559,113 @@ if (window.location.pathname == '/resumen.html') {
     simplicarRellenar4(arrayInfoGeneral.registros.ejercicios.movilidad, '.SelectorMovilida4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.fuerza.ligas, '.SelectorLigas1')
-    simplicarRellenar2(arrayInfoGeneral.registros.fuerza.ligas, '.SelectorLigas2')
-    simplicarRellenar3(arrayInfoGeneral.registros.fuerza.ligas, '.SelectorLigas3')
-    simplicarRellenar4(arrayInfoGeneral.registros.fuerza.ligas, '.SelectorLigas4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.fuerza.ligas, '.SelectorLigas1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.fuerza.ligas, '.SelectorLigas2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.fuerza.ligas, '.SelectorLigas3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.fuerza.ligas, '.SelectorLigas4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.fuerza.pesas, '.SelectorPesasMV1')
-    simplicarRellenar2(arrayInfoGeneral.registros.fuerza.pesas, '.SelectorPesasMV2')
-    simplicarRellenar3(arrayInfoGeneral.registros.fuerza.pesas, '.SelectorPesasMV3')
-    simplicarRellenar4(arrayInfoGeneral.registros.fuerza.pesas, '.SelectorPesasMV4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.fuerza.pesas, '.SelectorPesasMV1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.fuerza.pesas, '.SelectorPesasMV2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.fuerza.pesas, '.SelectorPesasMV3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.fuerza.pesas, '.SelectorPesasMV4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.fuerza.isometricos, '.SelectorIsometricos1')
-    simplicarRellenar2(arrayInfoGeneral.registros.fuerza.isometricos, '.SelectorIsometricos2')
-    simplicarRellenar3(arrayInfoGeneral.registros.fuerza.isometricos, '.SelectorIsometricos3')
-    simplicarRellenar4(arrayInfoGeneral.registros.fuerza.isometricos, '.SelectorIsometricos4')
-
-
-    simplicarRellenar1(arrayInfoGeneral.registros.fuerza.pesocorporal, '.SelectorPCorporal1')
-    simplicarRellenar2(arrayInfoGeneral.registros.fuerza.pesocorporal, '.SelectorPCorporal2')
-    simplicarRellenar3(arrayInfoGeneral.registros.fuerza.pesocorporal, '.SelectorPCorporal3')
-    simplicarRellenar4(arrayInfoGeneral.registros.fuerza.pesocorporal, '.SelectorPCorporal4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.fuerza.abdomen, '.SelectorAbdomen1')
-    simplicarRellenar2(arrayInfoGeneral.registros.fuerza.abdomen, '.SelectorAbdomen2')
-    simplicarRellenar3(arrayInfoGeneral.registros.fuerza.abdomen, '.SelectorAbdomen3')
-    simplicarRellenar4(arrayInfoGeneral.registros.fuerza.abdomen, '.SelectorAbdomen4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.fuerza.gluteos, '.SelectorGluteos1')
-    simplicarRellenar2(arrayInfoGeneral.registros.fuerza.gluteos, '.SelectorGluteos2')
-    simplicarRellenar3(arrayInfoGeneral.registros.fuerza.gluteos, '.SelectorGluteos3')
-    simplicarRellenar4(arrayInfoGeneral.registros.fuerza.gluteos, '.SelectorGluteos4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.bandas, '.SelectorBandas1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.bandas, '.SelectorBandas2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.bandas, '.SelectorBandas3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.bandas, '.SelectorBandas4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.caminar, '.SelectorPasos1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.caminar, '.SelectorPasos2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.caminar, '.SelectorPasos3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.caminar, '.SelectorPasos4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.bicicleta, '.SelectorCiclismo1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.bicicleta, '.SelectorCiclismo2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.bicicleta, '.SelectorCiclismo3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.bicicleta, '.SelectorCiclismo4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.natacion, '.SelectorNatacion1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.natacion, '.SelectorNatacion2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.natacion, '.SelectorNatacion3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.natacion, '.SelectorNatacion4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.tenis, '.SelectorTenis1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.tenis, '.SelectorTenis2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.tenis, '.SelectorTenis3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.tenis, '.SelectorTenis4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.taebo, '.SelectorTaebo1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.taebo, '.SelectorTaebo2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.taebo, '.SelectorTaebo3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.taebo, '.SelectorTaebo4')
-
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.baile, '.SelectorBaile1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.baile, '.SelectorBaile2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.baile, '.SelectorBaile3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.baile, '.SelectorBaile4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.fuerza.isometricos, '.SelectorIsometricos1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.fuerza.isometricos, '.SelectorIsometricos2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.fuerza.isometricos, '.SelectorIsometricos3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.fuerza.isometricos, '.SelectorIsometricos4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.aerobicos, '.SelectorAerobicos1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.aerobicos, '.SelectorAerobicos2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.aerobicos, '.SelectorAerobicos3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.aerobicos, '.SelectorAerobicos4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.fuerza.pesocorporal, '.SelectorPCorporal1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.fuerza.pesocorporal, '.SelectorPCorporal2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.fuerza.pesocorporal, '.SelectorPCorporal3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.fuerza.pesocorporal, '.SelectorPCorporal4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.gimnasio, '.SelectorGimnasio1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.gimnasio, '.SelectorGimnasio2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.gimnasio, '.SelectorGimnasio3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.gimnasio, '.SelectorGimnasio4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.fuerza.abdomen, '.SelectorAbdomen1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.fuerza.abdomen, '.SelectorAbdomen2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.fuerza.abdomen, '.SelectorAbdomen3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.fuerza.abdomen, '.SelectorAbdomen4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.fuerza.gluteos, '.SelectorGluteos1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.fuerza.gluteos, '.SelectorGluteos2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.fuerza.gluteos, '.SelectorGluteos3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.fuerza.gluteos, '.SelectorGluteos4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.bandas, '.SelectorBandas1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.bandas, '.SelectorBandas2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.bandas, '.SelectorBandas3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.bandas, '.SelectorBandas4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.caminar, '.SelectorPasos1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.caminar, '.SelectorPasos2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.caminar, '.SelectorPasos3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.caminar, '.SelectorPasos4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.bicicleta, '.SelectorCiclismo1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.bicicleta, '.SelectorCiclismo2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.bicicleta, '.SelectorCiclismo3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.bicicleta, '.SelectorCiclismo4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.natacion, '.SelectorNatacion1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.natacion, '.SelectorNatacion2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.natacion, '.SelectorNatacion3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.natacion, '.SelectorNatacion4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.tenis, '.SelectorTenis1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.tenis, '.SelectorTenis2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.tenis, '.SelectorTenis3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.tenis, '.SelectorTenis4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.taebo, '.SelectorTaebo1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.taebo, '.SelectorTaebo2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.taebo, '.SelectorTaebo3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.taebo, '.SelectorTaebo4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.baile, '.SelectorBaile1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.baile, '.SelectorBaile2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.baile, '.SelectorBaile3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.baile, '.SelectorBaile4')
 
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.boxeo, '.SelectorBoxeo1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.boxeo, '.SelectorBoxeo2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.boxeo, '.SelectorBoxeo3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.boxeo, '.SelectorBoxeo4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.aerobicos, '.SelectorAerobicos1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.aerobicos, '.SelectorAerobicos2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.aerobicos, '.SelectorAerobicos3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.aerobicos, '.SelectorAerobicos4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.artesmarciales, '.SelectorArtesM1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.artesmarciales, '.SelectorArtesM2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.artesmarciales, '.SelectorArtesM3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.artesmarciales, '.SelectorArtesM4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.gimnasio, '.SelectorGimnasio1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.gimnasio, '.SelectorGimnasio2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.gimnasio, '.SelectorGimnasio3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.gimnasio, '.SelectorGimnasio4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.burpees, '.SelectorBurpees1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.burpees, '.SelectorBurpees2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.burpees, '.SelectorBurpees3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.burpees, '.SelectorBurpees4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.saltodoble, '.SelectorSaltoDoble1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.saltodoble, '.SelectorSaltoDoble2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.saltodoble, '.SelectorSaltoDoble3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.saltodoble, '.SelectorSaltoDoble4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.boxeo, '.SelectorBoxeo1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.boxeo, '.SelectorBoxeo2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.boxeo, '.SelectorBoxeo3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.boxeo, '.SelectorBoxeo4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.crossfit, '.SelectorCrossfit1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.crossfit, '.SelectorCrossfit2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.crossfit, '.SelectorCrossfit3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.crossfit, '.SelectorCrossfit4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.artesmarciales, '.SelectorArtesM1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.artesmarciales, '.SelectorArtesM2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.artesmarciales, '.SelectorArtesM3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.artesmarciales, '.SelectorArtesM4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.burpees, '.SelectorBurpees1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.burpees, '.SelectorBurpees2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.burpees, '.SelectorBurpees3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.burpees, '.SelectorBurpees4')
 
-    simplicarRellenar1(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador1')
-    simplicarRellenar2(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador2')
-    simplicarRellenar3(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador3')
-    simplicarRellenar4(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador4')
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.saltodoble, '.SelectorSaltoDoble1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.saltodoble, '.SelectorSaltoDoble2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.saltodoble, '.SelectorSaltoDoble3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.saltodoble, '.SelectorSaltoDoble4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.crossfit, '.SelectorCrossfit1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.crossfit, '.SelectorCrossfit2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.crossfit, '.SelectorCrossfit3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.crossfit, '.SelectorCrossfit4')
+
+    // simplicarRellenar1(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador1')
+    // simplicarRellenar2(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador2')
+    // simplicarRellenar3(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador3')
+    // simplicarRellenar4(arrayInfoGeneral.registros.cardio.entrenador, '.SelectorEntrenador4')
 
     simplicarRellenar1(arrayInfoGeneral.registros.sintomas.acidez, '.SelectorAcidez1')
     simplicarRellenar2(arrayInfoGeneral.registros.sintomas.acidez, '.SelectorAcidez2')
@@ -10058,7 +10010,30 @@ if (window.location.pathname == '/resumen.html') {
     simplicarRellenar4(arrayInfoGeneral.registros.material.otros, '.SelectorOtros4')
 
 
+    simplicarRellenar1(arrayInfoGeneral.registros.auditorias.aps, '.SelectorAps1')
+    simplicarRellenar2(arrayInfoGeneral.registros.auditorias.aps, '.SelectorAps2')
+    simplicarRellenar3(arrayInfoGeneral.registros.auditorias.aps, '.SelectorAps3')
+    simplicarRellenar4(arrayInfoGeneral.registros.auditorias.aps, '.SelectorAps4')
 
+    simplicarRellenar1(arrayInfoGeneral.registros.auditorias.apsi, '.SelectorApsi1')
+    simplicarRellenar2(arrayInfoGeneral.registros.auditorias.apsi, '.SelectorApsi2')
+    simplicarRellenar3(arrayInfoGeneral.registros.auditorias.apsi, '.SelectorApsi3')
+    simplicarRellenar4(arrayInfoGeneral.registros.auditorias.apsi, '.SelectorApsi4')
+
+    simplicarRellenar1(arrayInfoGeneral.registros.auditorias.anu, '.SelectorAnu1')
+    simplicarRellenar2(arrayInfoGeneral.registros.auditorias.anu, '.SelectorAnu2')
+    simplicarRellenar3(arrayInfoGeneral.registros.auditorias.anu, '.SelectorAnu3')
+    simplicarRellenar4(arrayInfoGeneral.registros.auditorias.anu, '.SelectorAnu4')
+
+    simplicarRellenar1(arrayInfoGeneral.registros.auditorias.aej, '.SelectorAej1')
+    simplicarRellenar2(arrayInfoGeneral.registros.auditorias.aej, '.SelectorAej2')
+    simplicarRellenar3(arrayInfoGeneral.registros.auditorias.aej, '.SelectorAej3')
+    simplicarRellenar4(arrayInfoGeneral.registros.auditorias.aej, '.SelectorAej4')
+
+    simplicarRellenar1(arrayInfoGeneral.registros.auditorias.aea, '.SelectorAea1')
+    simplicarRellenar2(arrayInfoGeneral.registros.auditorias.aea, '.SelectorAea2')
+    simplicarRellenar3(arrayInfoGeneral.registros.auditorias.aea, '.SelectorAea3')
+    simplicarRellenar4(arrayInfoGeneral.registros.auditorias.aea, '.SelectorAea4')
 
 
 
@@ -10129,13 +10104,93 @@ if (window.location.pathname == '/resumen.html') {
     funcionDespliegue.forEach(funcionDespliegue => {
         funcionDespliegue.onclick = (e) => {
             console.log(e.target.className)
-            if (e.target.className == 'fa-solid fa-chevron-right selectorFlecha1') {
-                const bloqueAvance = document.querySelector('.divgraficos-progreso').style.display = 'block'
 
-            }else if (e.target.className == 'fa-solid fa-chevron-right selectorFlecha2') {
-                const bloqueAvance = document.querySelector('.divgraficos-progreso').style.display = 'block'
-                
+
+            function validarDivgrafico(direccionflecha,) {
+                if (e.target.className == direccionflecha) {
+                    const bloqueAvance = document.querySelector('.divgraficos-progreso').style.display = 'block'
+                }
             }
+
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha1')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha2')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha19')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha20')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha23')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha24')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha26')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha27')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha28')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha29')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha45')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha46')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha47')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha48')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha49')
+
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha50')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha51')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha52')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha53')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha54')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha55')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha56')
+
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha57')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha58')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha59')
+
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha60')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha61')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha62')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha63')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha64')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha65')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha66')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha67')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha68')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha69')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha70')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha71')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha72')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha73')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha74')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha75')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha76')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha77')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha78')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha79')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha80')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha81')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha82')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha83')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha84')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha85')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha86')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha87')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha88')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha89')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha90')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha91')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha92')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha93')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha94')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha95')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha96')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha97')
+
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha98')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha99')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha100')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha101')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha102')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha103')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha104')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha105')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha106')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha107')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha108')
+            validarDivgrafico('fa-solid fa-chevron-right selectorFlecha109')
         }
 
     })
@@ -10144,13 +10199,493 @@ if (window.location.pathname == '/resumen.html') {
     document.querySelector('body').addEventListener('click', (e) => {
         console.log(e.target.className)
         if (e.target.className == 'fa-solid fa-chevron-left iconFleGraficosback') {
-            document.querySelector('.divgraficos-progreso').style.display = 'none'
-        }else if (e.target.className == 'fa-solid fa-chevron-right selectorFlecha1') {
+            // document.querySelector('.divgraficos-progreso').style.display = 'none'
+            // document.querySelector(".chart-container").remove();
+            // document.querySelector(".chart-container").remove();
+            window.open("ficha-medica.html", "_self");
+            // document.querySelector(".contenedorCirculos").removeChild();
+            // document.querySelector(".contenedorCirculos").removeChild();
+
+
+        } else if (e.target.className == 'fa-solid fa-chevron-right selectorFlecha1') {
             document.querySelector('.div-graficoAvanceSemanal').classList.add('hola')
         }
 
 
     })
+
+    console.log(arrayAyuda[0].texto)
+
+    arrayAyuda.forEach(e => {
+        let contenedorayu = document.querySelector('.contenedor-ayuda-colores')
+        var DivAyu = document.createElement('div')
+        DivAyu.classList.add('contenedorAyudagrafico')
+        var pAyu = document.createElement('p')
+        pAyu.textContent = e.texto
+
+        DivAyu.appendChild(pAyu);
+        contenedorayu.appendChild(DivAyu);
+
+        console.log(e.texto)
+    });
+
+
+    function peticionesPutsFichamentica(direciondelapeticion,direciondeenviardt,datoenviardegeneral,fechadelasemanaaenviar,direcciondelapeticionfech){
+        document.querySelector('body').addEventListener('click', (e) => {
+            if (e.target.className == direciondelapeticion) {
+                async function EnviarValoresMedioAmbientePolitica() {
+    
+                    const options1 = {
+                        mode: "cors",
+                        credentials: 'include',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            device: "unique_device",
+                            access: arr[0]
+                        },
+                        method: 'POST',
+                        body: JSON.stringify({
+                            direciondeenviardt: datoenviardegeneral, "SEMANA": fechadelasemanaaenviar
+                        })
+    
+                    }
+    
+    
+                    let result = await fetch(direcciondelapeticionfech, options1)
+                        .then((E) => E.json())
+                        .catch(console.error);
+    
+                    console.log(result)
+    
+                    console.log('se hizo la peticion')
+                }
+    
+                EnviarValoresMedioAmbientePolitica()
+            }
+        })
+    }
+
+
+
+    function enviardatosdelapeticion(enviardatosdereincionfech,direcciondelatosenapi,paradondesevanaenviarlosdatoasdeapifech){
+        peticionesPutsFichamentica('divSCC enviarAvanceundefine',direcciondelatosenapi,0,enviardatosdereincionfech,paradondesevanaenviarlosdatoasdeapifech)
+    peticionesPutsFichamentica('divSCC enviarAvance0',direcciondelatosenapi,1,enviardatosdereincionfech,paradondesevanaenviarlosdatoasdeapifech)
+    peticionesPutsFichamentica('divSCC enviarAvance1',direcciondelatosenapi,2,enviardatosdereincionfech,paradondesevanaenviarlosdatoasdeapifech)
+    peticionesPutsFichamentica('divSCC enviarAvance2',direcciondelatosenapi,3,enviardatosdereincionfech,paradondesevanaenviarlosdatoasdeapifech)
+    peticionesPutsFichamentica('divSCC enviarAvance3',direcciondelatosenapi,4,enviardatosdereincionfech,paradondesevanaenviarlosdatoasdeapifech)
+    peticionesPutsFichamentica('divSCC enviarAvance4',direcciondelatosenapi,5,enviardatosdereincionfech,paradondesevanaenviarlosdatoasdeapifech)
+    }
+
+
+    document.querySelector('.divcontenetodoselectorcolor').style.display = 'none'
+
+    function crearCirculosEnviarValor(direccionDiv,){
+
+    document.querySelector('body').addEventListener('click', (e)=>{
+
+        if (e.target.className == direccionDiv ) {
+    document.querySelector('.divcontenetodoselectorcolor').style.display = 'block'
+            
+        }else if (e.target.className == 'divselectorDecolor') {
+            document.querySelector('.divcontenetodoselectorcolor').style.display = 'none'
+            document.querySelector('.enviarAvanceundefine').remove()
+            document.querySelector('.enviarAvance0').remove()
+            document.querySelector('.enviarAvance1').remove()
+            document.querySelector('.enviarAvance2').remove()
+            document.querySelector('.enviarAvance3').remove()
+            document.querySelector('.enviarAvance4').remove()
+
+        }
+    })
+    }
+
+
+
+    function crearcirculoscolresenv(colorenvua, clasepraenviar){
+        const contenedivcricen = document.querySelector('.divContainerColorselector')
+        const circliendiv = document.createElement('div')
+        circliendiv.style.background = colorenvua
+        circliendiv.classList.add('divSCC')
+        circliendiv.classList.add(clasepraenviar)
+        contenedivcricen.appendChild(circliendiv)
+
+    }
+
+
+    crearCirculosEnviarValor('divValorMG Avance1')
+
+
+    document.querySelector('body').addEventListener('click', (e) => {
+
+if(e.target.className =='divValorMG Avance1'){
+    console.log('holaputo')
+    crearcirculoscolresenv('#3f3f3f','enviarAvanceundefine',)
+    crearcirculoscolresenv('#f44336','enviarAvance0',)
+    crearcirculoscolresenv('#ff9800','enviarAvance1',)
+    crearcirculoscolresenv('#ffeb3b','enviarAvance2',)
+    crearcirculoscolresenv('#adff2f','enviarAvance3',)
+    crearcirculoscolresenv('#18aeff','enviarAvance4',)
+    enviardatosdelapeticion(arrayInfoBasica.data.semana,"avance","https://api.metodovargas.app/patients/v1/record/")
+}else{
+    // crearCirculosEnviarValor('divValorMG Avance2')
+    // crearCirculosEnviarValor('divValorMG Avance3')
+    // crearCirculosEnviarValor('divValorMG Avance4')
+}
+})
+
+
+
+
+
+
+
+
+
+arrayInfoBasica.data.semana;
+let i = 1;
+let it = 1;
+
+var xValues = [];
+
+for (arrayInfoBasica.data.semana; arrayInfoBasica.data.semana >= i; arrayInfoBasica.data.semana--) {
+    xValues.push(arrayInfoBasica.data.semana);
+}
+
+// console.log(xValues)
+
+function crearGraficos(divContenedorGr,valoresGr1,valoresGr2,nombrevalor1,nombrevalor2) {
+    var arrPeso = [];
+    var arrGrasa = [];
+    var contenedorGraficos = document.querySelector(divContenedorGr);
+    var divG = document.createElement("div");
+    divG.classList.add("chart-container");
+    var canvasG = document.createElement("canvas");
+    canvasG.setAttribute("id", "myChart");
+    divG.appendChild(canvasG);
+    contenedorGraficos.appendChild(divG);
+    divG.style.height = "auto";
+    divG.style.width = "100vw";
+
+    xValues.forEach((e) => {
+        if (valoresGr1[e] == undefined) {
+            arrGrasa.push(0);
+        } else {
+            arrGrasa.push(valoresGr1[e]);
+        }
+
+        if (valoresGr2[e] == undefined) {
+            arrPeso.push(0);
+        } else {
+            arrPeso.push(valoresGr2[e]);
+        }
+    });
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+
+            datasets: [
+                {
+                    label: nombrevalor1,
+                    data: arrGrasa,
+                    borderColor: "#fb6c3f",
+                    fill: false,
+                },
+                {
+                    label: nombrevalor2,
+                    data: arrPeso,
+                    borderColor: "#18ffff",
+                    fill: false,
+                },
+            ],
+        },
+        options: {
+            scales: {
+                yAxes: [
+                    {
+                        ticks: {
+                            beginAtZero: true,
+                        },
+                    },
+                ],
+            },
+        },
+    });
+}
+
+function crearGraficos1(divContenedorGr, valoresGr1, nombrevalor1, colorGr) {
+    var arrGrasa = [];
+    var contenedorGraficos = document.querySelector(divContenedorGr);
+    var divG = document.createElement("div");
+    divG.classList.add("chart-container");
+    var canvasG = document.createElement("canvas");
+    canvasG.setAttribute("id", "myChart1");
+    divG.style.height = "auto";
+    divG.style.width = "96vw";
+
+    document.querySelector('#titleInfoUser').textContent = nombrevalor1
+
+    divG.appendChild(canvasG);
+    contenedorGraficos.appendChild(divG);
+
+    xValues.forEach((e) => {
+        if (valoresGr1[e] == undefined) {
+            arrGrasa.push(0);
+        } else {
+            arrGrasa.push(valoresGr1[e]);
+        }
+    });
+
+    var ctx = document.getElementById("myChart1").getContext("2d");
+
+    var myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: xValues,
+
+            datasets: [
+                {
+                    label: nombrevalor1,
+                    data: arrGrasa,
+                    borderColor: colorGr,
+                    fill: false,
+                },
+            ],
+        },
+        options: {
+            scales: {
+                yAxes: [
+                    {
+                        ticks: {
+                            beginAtZero: true,
+                        },
+                    },
+                ],
+            },
+        },
+    });
+}
+
+
+
+
+function crearCirculosPro(valordelcirculoadar,) {
+
+    var arryGeneC = [];
+    arryGeneC.push(valordelcirculoadar)
+
+    var arryGeneC1 = arryGeneC[0];
+
+
+    console.log(arryGeneC1)
+    console.log(xValues)
+
+    xValues.forEach((e) => {
+        if (valordelcirculoadar[e] == undefined) {
+            var contenedorCirculosP = document.querySelector('.contenedorCirculos')
+            var divCpcon = document.createElement("div");
+            divCpcon.classList.add('contenedorparaeliminar')
+            var divCp = document.createElement("div");
+            divCp.classList.add("divsemanaAndCirculo");
+            var PcirculosP = document.createElement("p");
+            var divcirculo = document.createElement("div");
+            divcirculo.classList.add("divValorMG");
+
+            divcirculo.style.background = 'rgb(63, 63, 63)'
+
+            PcirculosP.textContent = 'S' + e
+            divCp.appendChild(PcirculosP);
+            divCp.appendChild(divcirculo);
+            divCpcon.appendChild(divCp);
+
+            contenedorCirculosP.appendChild(divCpcon);
+
+
+        } else if (valordelcirculoadar[e] == 1) {
+            var contenedorCirculosP = document.querySelector('.contenedorCirculos')
+            var divCpcon = document.createElement("div");
+            divCpcon.classList.add('contenedorparaeliminar')
+            var divCp = document.createElement("div");
+            divCp.classList.add("divsemanaAndCirculo");
+            var PcirculosP = document.createElement("p");
+            var divcirculo = document.createElement("div");
+            divcirculo.classList.add("divValorMG");
+
+            divcirculo.style.background = 'rgb(244, 67, 54)'
+
+            PcirculosP.textContent = 'S' + e
+            divCp.appendChild(PcirculosP);
+            divCp.appendChild(divcirculo);
+            divCpcon.appendChild(divCp);
+
+            contenedorCirculosP.appendChild(divCpcon);
+
+        } else if (valordelcirculoadar[e] == 2) {
+            var contenedorCirculosP = document.querySelector('.contenedorCirculos')
+            var divCpcon = document.createElement("div");
+            divCpcon.classList.add('contenedorparaeliminar')
+            var divCp = document.createElement("div");
+            divCp.classList.add("divsemanaAndCirculo");
+            var PcirculosP = document.createElement("p");
+            var divcirculo = document.createElement("div");
+            divcirculo.classList.add("divValorMG");
+
+            divcirculo.style.background = 'rgb(255, 152, 0)'
+
+            PcirculosP.textContent = 'S' + e
+            divCp.appendChild(PcirculosP);
+            divCp.appendChild(divcirculo);
+            divCpcon.appendChild(divCp);
+
+            contenedorCirculosP.appendChild(divCpcon);
+        } else if (valordelcirculoadar[e] == 3) {
+            var contenedorCirculosP = document.querySelector('.contenedorCirculos')
+            var divCpcon = document.createElement("div");
+            divCpcon.classList.add('contenedorparaeliminar')
+            var divCp = document.createElement("div");
+            divCp.classList.add("divsemanaAndCirculo");
+            var PcirculosP = document.createElement("p");
+            var divcirculo = document.createElement("div");
+            divcirculo.classList.add("divValorMG");
+
+            divcirculo.style.background = 'rgb(255, 235, 59)'
+
+            PcirculosP.textContent = 'S' + e
+            divCp.appendChild(PcirculosP);
+            divCp.appendChild(divcirculo);
+            divCpcon.appendChild(divCp);
+
+            contenedorCirculosP.appendChild(divCpcon);
+        } else if (valordelcirculoadar[e] == 4) {
+            var contenedorCirculosP = document.querySelector('.contenedorCirculos')
+            var divCpcon = document.createElement("div");
+            divCpcon.classList.add('contenedorparaeliminar')
+            var divCp = document.createElement("div");
+            divCp.classList.add("divsemanaAndCirculo");
+            var PcirculosP = document.createElement("p");
+            var divcirculo = document.createElement("div");
+            divcirculo.classList.add("divValorMG");
+
+            divcirculo.style.background = 'rgb(173, 255, 47)'
+
+            PcirculosP.textContent = 'S' + e
+            divCp.appendChild(PcirculosP);
+            divCp.appendChild(divcirculo);
+            divCpcon.appendChild(divCp);
+
+            contenedorCirculosP.appendChild(divCpcon);
+        } else if (valordelcirculoadar[e] == 5) {
+            var contenedorCirculosP = document.querySelector('.contenedorCirculos')
+            var divCpcon = document.createElement("div");
+            divCpcon.classList.add('contenedorparaeliminar')
+            var divCp = document.createElement("div");
+            divCp.classList.add("divsemanaAndCirculo");
+            var PcirculosP = document.createElement("p");
+            var divcirculo = document.createElement("div");
+            divcirculo.classList.add("divValorMG");
+
+            divcirculo.style.background = 'rgb(24, 174, 255)'
+
+            PcirculosP.textContent = 'S' + e
+            divCp.appendChild(PcirculosP);
+            divCp.appendChild(divcirculo);
+            divCpcon.appendChild(divCp);
+
+            contenedorCirculosP.appendChild(divCpcon);
+        }
+    });
+}
+
+
+
+function valoresgrficoAyuda(direcionclick, valoresDeLosDatos, nombreDelgraf) {
+    document.querySelector("body").addEventListener("click", (e) => {
+        console.log(e.target.className);
+        if (e.target.className == direcionclick) {
+            crearGraficos1(".div-graficoAvanceSemanal", valoresDeLosDatos, nombreDelgraf, "#40c4fe");
+            crearCirculosPro(valoresDeLosDatos)
+
+        }
+    });
+}
+
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha1", arrayInfoGeneral.registros.calificacion.general, 'General')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha2", arrayInfoGeneral.registros.calificacion.avance, 'Avance')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha19", arrayInfoGeneral.registros.aggalimentos.agregaralimentosdecision, 'Agregar Alimentos')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha20", arrayInfoGeneral.registros.resumen.alimentos, 'Resumen Alimentos')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha23", arrayInfoGeneral.registros.resumen.ejercicios, 'Resumen de Ejercicio')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha24", arrayInfoGeneral.registros.resumen.actitudes, 'Resumen de Actitudes')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha26", arrayInfoGeneral.registros.resumen.ambiente, 'Resumen de Medio ambiente')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha27", arrayInfoGeneral.registros.resumen.adiciones, 'Resumen de Adicciones')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha28", arrayInfoGeneral.registros.resumen.presenciaa, 'Asistencia Presencial')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha29", arrayInfoGeneral.registros.resumen.presenciap, 'Asistencia app')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha45", arrayInfoGeneral.registros.actitudes.c1, 'Hacer 20 cosas a la vez')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha46", arrayInfoGeneral.registros.actitudes.c2, 'Todo debe ser perfecto')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha47", arrayInfoGeneral.registros.actitudes.c3, 'Tendencia a no ocuparse y preocuparse')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha48", arrayInfoGeneral.registros.actitudes.c4, 'No saber decir no')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha49", arrayInfoGeneral.registros.actitudes.c5, 'Tendencia a hacer todo rápido')
+
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha50", arrayInfoGeneral.registros.ambiente.b1, 'Relación con su pareja')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha51", arrayInfoGeneral.registros.ambiente.b2, 'Relación con sus hijos')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha52", arrayInfoGeneral.registros.ambiente.b3, 'Relación con su Familia')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha53", arrayInfoGeneral.registros.ambiente.b4, 'Comodidad en el hogar')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha54", arrayInfoGeneral.registros.ambiente.b5, 'Relación con su trabajo')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha55", arrayInfoGeneral.registros.ambiente.b6, 'Preocupación actual del Covid-19')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha56", arrayInfoGeneral.registros.ambiente.b7, 'Preocupacion actual por la politica del pais')
+
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha57", arrayInfoGeneral.registros.adiciones.a1, 'Adicción a los dulces')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha58", arrayInfoGeneral.registros.adiciones.a2, 'Adiccíon a las harinas')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha59", arrayInfoGeneral.registros.adiciones.a3, 'Comer por ansiedad')
+
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha60", arrayInfoGeneral.registros.bach.holly, 'Holly')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha61", arrayInfoGeneral.registros.bach.chicory, 'Chicory')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha62", arrayInfoGeneral.registros.bach.agrimony, 'Agrimony')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha63", arrayInfoGeneral.registros.bach.rock_water, 'Rock water')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha64", arrayInfoGeneral.registros.bach.aspen, 'Aspen')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha65", arrayInfoGeneral.registros.bach.larch, 'Larch')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha66", arrayInfoGeneral.registros.bach.gorse, 'Gorse')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha67", arrayInfoGeneral.registros.bach.wild_oat, 'Wild oat')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha68", arrayInfoGeneral.registros.bach.heather, 'Heather')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha69", arrayInfoGeneral.registros.bach.chesnut_bud, 'Chesnut bud')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha70", arrayInfoGeneral.registros.bach.white_chesnut, 'White chesnut')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha71", arrayInfoGeneral.registros.bach.sweet_chesnut, 'Sweet chesnut')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha72", arrayInfoGeneral.registros.bach.red_chesnut, 'Red chesnut')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha73", arrayInfoGeneral.registros.bach.centaury, 'Centaury')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha74", arrayInfoGeneral.registros.bach.cherry_plum, 'Cherry plum')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha75", arrayInfoGeneral.registros.bach.cerato, 'Cerato')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha76", arrayInfoGeneral.registros.bach.clematis, 'Clematis')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha77", arrayInfoGeneral.registros.bach.star_of_bethlehem, 'Star of bethlehem')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha78", arrayInfoGeneral.registros.bach.gentian, 'Gentian')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha79", arrayInfoGeneral.registros.bach.beech, 'Beech')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha80", arrayInfoGeneral.registros.bach.rock_rose, 'Rock Rose')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha81", arrayInfoGeneral.registros.bach.hornbeam, 'Hornbeam')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha82", arrayInfoGeneral.registros.bach.impatiens, 'Impatiens')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha82", arrayInfoGeneral.registros.bach.honeysuckle, 'Honeysuckle')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha83", arrayInfoGeneral.registros.bach.crab_apple, 'Crab apple')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha84", arrayInfoGeneral.registros.bach.mimulus, 'Mimulos')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha85", arrayInfoGeneral.registros.bach.mustard, 'Mustard')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha86", arrayInfoGeneral.registros.bach.walnut, 'Walnut')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha87", arrayInfoGeneral.registros.bach.olive, 'Olive')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha88", arrayInfoGeneral.registros.bach.elm, 'Elm')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha89", arrayInfoGeneral.registros.bach.pine, 'Pine')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha90", arrayInfoGeneral.registros.bach.oak, 'Oak')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha91", arrayInfoGeneral.registros.bach.wild_rose, 'Wild rose')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha92", arrayInfoGeneral.registros.bach.willow, 'Willow')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha93", arrayInfoGeneral.registros.bach.scleranthus, 'Scleranthus')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha94", arrayInfoGeneral.registros.bach.verbain, 'Verbain')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha95", arrayInfoGeneral.registros.bach.vine, 'Vine')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha96", arrayInfoGeneral.registros.bach.water_violet, 'Water Violet')
+// valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha97", arrayInfoGeneral.registros.bach.rescue_remedy, 'Rescue Remedy')
+
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha97", arrayInfoGeneral.registros.alimentos.fase, 'Fase')
+valoresgrficoAyuda("fa-solid fa-chevron-right selectorFlecha97", arrayInfoGeneral.registros.alimentos.fase, 'Fase')
+
+crearGraficos(".div-grafico-peso-grasa", arrayInfoBasica.measures.grasab, arrayInfoBasica.measures.peso,  "Peso","Grasa");
+
+
+
+
+
 
 
 

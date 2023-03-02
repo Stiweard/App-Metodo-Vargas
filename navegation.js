@@ -9,7 +9,14 @@ const notas = document.getElementById('notas');
 const avanceFisico = document.getElementById('avance -fisico');
 // variable que contine el mavegador
 
-const htmlNavegation = '<ul id="navegacion-ul"><li class="navegation-li" id="resumenIndicador"><i id="resumen" class="fa-regular fa-circle-user icono"></i></li><li class="navegation-li" id="inicioIndicador"><i id="inicio" class="fa-solid fa-envelope-open-text icono"></i></li><li class="navegation-li" id="ficha-medicaIndicador"><i id="ficha-medica" class="fa-regular fa-clipboard icono"></i></li><li class="navegation-li" id="notasIndicador"><i id="notas" class="fa-regular fa-file-lines icono"></i></li></ul>'
+const htmlNavegation = `
+<ul id="navegacion-ul">
+<li class="navegation-li" id="resumenIndicador"><i id="resumen" class="fa-regular fa-circle-user icono"></i></li>
+<li class="navegation-li" id="inicioIndicador"><i id="inicio" class="fa-solid fa-envelope-open-text icono"></i></li>
+<li class="navegation-li" id="ficha-medicaIndicador"><i id="ficha-medica" class="fa-regular fa-clipboard icono"></i></li>
+<li class="navegation-li" id="notasIndicador"><i id="notas" class="fa-regular fa-file-lines icono"></i></li>
+<li class="navegation-li" id="userIndicador"><i id="user" class="fa-regular fa-user icono"></i></li>
+</ul>`
 
 function navegacion() {
     return navegation.innerHTML = htmlNavegation;
@@ -26,6 +33,8 @@ function enlaces() {
             window.open("ficha-medica.html", "_self");
         } else if (e.target.id == 'notas') {
             window.open("notas-para-ti.html", "_self");
+        } else if (e.target.id == 'user') {
+            window.open("infoUser.html", "_self");
         }
 
     })
@@ -51,6 +60,9 @@ function indicadorIcono() {
 
     } else if (window.location.pathname == '/avances-fisicos.html') {
         document.querySelector('.avance-fisico-nav').classList.add("active")
+
+    } else if (window.location.pathname == '/infoUser.html') {
+        document.querySelector('.info-user-nav').classList.add("active")
 
     }
 }

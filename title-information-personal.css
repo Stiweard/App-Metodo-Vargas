@@ -69,7 +69,6 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4vh 1vh 8vh 1vh;
     font-weight: 400;
     text-transform: capitalize;
 }
@@ -78,6 +77,45 @@ html{
     display: flex;
     flex-direction: column;
     margin: 2vh;
+    align-items: center;
+}
+.contenedor-btn-cerrsesion{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-documentos-fotos-semanales{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.contedor-infopdec{
+    background: #151515;
+    margin: 18px;
+    border-radius: 14px;
+    padding: 5px;
+}
+
+.contenedor-documentos-fotos-semanales>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background: #151515;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+.contenedor-documentos-fotos-semanales div p{
+    color: #fff;
+}
+.contenedor-documentos-fotos-semanales div i{
+    color: #fff;
+    font-size: 1.7em;
 }
 
 #botonSecion{

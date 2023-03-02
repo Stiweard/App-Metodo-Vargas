@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Médica</title>
+    <link rel="stylesheet" href="navegation.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilosGenerales.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="title-information-personal.css">
+    <link rel="stylesheet" href="ficha.css">
+</head>
+
+<body>
+
+
+    <div id="container">
+        <section id="title-divF-1" class="containerEvento">
+            <ul id="ul-title-resumen">
+                <li style="z-index: -1;" class="li-title-resumen"><i class="fa-solid fa-calendar-days iconoTitle"></i>
+                </li>
+                <li id="titleElemento">nombre paciente</li>
+                <li class="li-title-resumen"><i class="fa-regular fa-user iconoTitle"></i></li>
+            </ul>
+        </section>
+
+        </main>
+
+        <div class="divgraficos-progreso">
+            <div class="div-graficos-flex-con">
+                <div class="flechaTitleGraficos">
+                    <i class="fa-solid fa-chevron-left iconFleGraficosback"></i>
+                    <div class="div-titleGraficos">
+                        <h2 id="titleInfoUser"></h2>
+                    </div>
+                    <i class="fa-solid fa-chevron-left iconFleGraficosback1"></i>
+                </div>
+                <div class="div-graficos-contenedor">
+                    <div class="div-semanas-4-18-36">
+                        <div class="semanasDiv">
+                            <div class="div-semana4"><button>4 semanas</button></div>
+                            <div class="div-semana18"><button>18 semanas</button></div>
+                            <div class="div-semana36"><button>36 semanas</button></div>
+                        </div>
+                        <div class="dicIcon">
+                            <div class="div-cambio-grafico"><i class="fa-solid fa-chart-column" style="color:#fff"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-graficoAvanceSemanal">
+
+                    </div>
+                </div>
+                <div class="div-leni-tiempo-semanal">
+                    <p>linea de tiempo semanal</p>
+                    <div class="contenedorCirculos">
+
+                    </div>
+                </div>
+                <div class="graficos-ayuda-calificar">
+                    <p>ayuda</p>
+                    <div class="contenedor-ayuda-colores">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="navegation" class="info-user-nav">
+            <!-- navegador -->
+        </nav>
+
+    </div>
+    <div class="continerInfoUser">
+        <div class="flechaTitle">
+            <i class="fa-solid fa-chevron-left iconFleUserback"></i>
+            <h2 id="titleInfoUser">Informacion personal</h2>
+            <i class="fa-solid fa-chevron-left iconFleUserback1"></i>
+
+        </div>
+        <div class="titleNombreUser">
+        </div>
+        <div class="div-flex-Info-pers">
+            <div class="contenidoInformacionUser">
+                <p class="infoUserContent">Número de documento:<span class="contentUserSpan spanUser1"></span></p>
+                <p class="infoUserContent">Correo:<span class="contentUserSpan spanUser2"></span></p>
+                <p class="infoUserContent">Sexo:<span class="contentUserSpan spanUser3"></span></p>
+                <p class="infoUserContent">Fecha de macimiento:<span class="contentUserSpan spanUser4"></span></p>
+                <p class="infoUserContent">Edad:<span class="contentUserSpan spanUser5"></span></p>
+                <p class="infoUserContent">Altura:<span class="contentUserSpan spanUser6"></span></p>
+                <p class="infoUserContent">Fecha de inicio:<span class="contentUserSpan spanUser7"></span></p>
+                <p class="infoUserContent">Semana actual:<span class="contentUserSpan spanUser8"></span></p>
+                <p class="infoUserContent">Profeción:<span class="contentUserSpan spanUser9"></span></p>
+            </div>
+        </div>
+        <div class="containerBotonsecion blurBotonC"><button id="botonSecion"> cerrar secion</button></div>
+        <div class="containerBotonsecion"><button id="botonSecion"> cerrar secion</button></div>
+
+
+
+    </div>
+    <!-- peticiones -->
+    <script src="peticiones.js"></script>
+    <!-- icono Font Awesome -->
+    <script src="https://kit.fontawesome.com/a57b9d94d2.js" crossorigin="anonymous"></script>
+    <!-- navegacion -->
+    <script src="navegation.js"></script>
+
+    <!-- graficos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <!-- search -->
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-eefb9194-460d-4cc1-ef47-678bc64e746f"
+        crossorigin=""></script>
+
+    <!-- ficha-medica -->
+    <!-- title -->
+    <script src="title-information-personal.js"></script>
+</body>
+
+</html>

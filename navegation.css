@@ -95,3 +95,15 @@
     font-size: 1.7em;
     color: #888888;
 }
+
+
+
+.info-user-nav.active #userIndicador{
+    list-style: none;
+    padding: 14px;
+    background: #000;
+    border-radius: 1.3em;
+}
+.info-user-nav.active #userIndicador .icono{
+    color: #fff;
+}
