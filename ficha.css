@@ -421,7 +421,7 @@
 /* style5 */
 
 .section-1Style5.active {
-    height: 527px;
+    height: 596px;
     transition: .5s;
 }
 
@@ -493,7 +493,7 @@
 .section-1Style5 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 73px);
+    grid-template-rows: repeat(7, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -516,7 +516,7 @@
 /* style6 */
 
 .section-1Style6.active {
-    height: 672px;
+    height: 744px;
     transition: .5s;
 }
 
@@ -588,7 +588,7 @@
 .section-1Style6 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 73px);
+    grid-template-rows: repeat(9, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -897,7 +897,7 @@
 /* style10 */
 
 .section-1Style10.active {
-    height: 1040px;
+    height: 1114px;
     transition: .5s;
 }
 
@@ -970,7 +970,7 @@
 .section-1Style10 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(13, 73px);
+    grid-template-rows: repeat(14, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -1187,7 +1187,7 @@
 /* style13 */
 
 .section-1Style13.active {
-    height: 670px;
+    height: 1780px;
     transition: .5s;
 }
 
@@ -1260,7 +1260,7 @@
 .section-1Style13 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 73px);
+    grid-template-rows: repeat(24, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -1382,7 +1382,7 @@
 /* style15 */
 
 .section-1Style15.active {
-    height: 1265px;
+    height: 448px;
     transition: .5s;
 }
 
@@ -1438,6 +1438,9 @@
     padding-left: 30px;
     position: relative;
 }
+.contenedorparaeliminar{
+    display: flex;
+}
 
 .section-1Style15.active .divEstadoSalud1 {
     height: 100%;
@@ -1455,7 +1458,7 @@
 .section-1Style15 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(16, 73px);
+    grid-template-rows: repeat(5, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -1478,7 +1481,7 @@
 /* style16 */
 
 .section-1Style16.active {
-    height: 671px;
+    height: 744px;
     transition: .5s;
 }
 
@@ -1551,7 +1554,7 @@
 .section-1Style16 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 73px);
+    grid-template-rows: repeat(9, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -1670,7 +1673,7 @@
 /* style18 */
 
 .section-1Style18.active {
-    height: 601px;
+    height: 744px;
     transition: .5s;
 }
 
@@ -1744,7 +1747,7 @@
 .section-1Style18 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(7, 73px);
+    grid-template-rows: repeat(9, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -1767,7 +1770,7 @@
 /* style19 */
 
 .section-1Style19.active {
-    height: 821px;
+    height: 1040px;
     transition: .5s;
 }
 
@@ -1841,7 +1844,7 @@
 .section-1Style19 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 73px);
+    grid-template-rows: repeat(13, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -1864,7 +1867,7 @@
 /* style20 */
 
 .section-1Style20.active {
-    height: 746px;
+    height: 966px;
     transition: .5s;
 }
 
@@ -1937,7 +1940,7 @@
 .section-1Style20 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(9, 73px);
+    grid-template-rows: repeat(12, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -1960,7 +1963,7 @@
 /* style21 */
 
 .section-1Style21.active {
-    height: 671px;
+    height: 892px;
     transition: .5s;
 }
 
@@ -2033,7 +2036,7 @@
 .section-1Style21 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 73px);
+    grid-template-rows: repeat(11, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -2056,7 +2059,7 @@
 /* style22 */
 
 .section-1Style22.active {
-    height: 226px;
+    height: 1114px;
     transition: .5s;
 }
 
@@ -2130,7 +2133,7 @@
 .section-1Style22 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 73px);
+    grid-template-rows: repeat(14, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -2250,7 +2253,7 @@
 /* style24 */
 
 .section-1Style24.active {
-    height: 1040px;
+    height: 2224px;
     transition: .5s;
 }
 
@@ -2323,7 +2326,7 @@
 .section-1Style24 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(13, 73px);
+    grid-template-rows: repeat(31, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -2346,7 +2349,7 @@
 /* style25 */
 
 .section-1Style25.active {
-    height: 374px;
+    height: 1188px;
     transition: .5s;
 }
 
@@ -2419,7 +2422,7 @@
 .section-1Style25 .containerGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(11, 73px);
+    grid-template-rows: repeat(16, 73px);
     grid-gap: 1px;
     background: #000;
 }
@@ -2769,14 +2772,55 @@ body .divcontenedorSelectorColor {
 
 .semanasDiv {
     display: flex;
-    gap: 15px;
     background: #000;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 14px;
+    align-items: center;
 }
 
 .dicIcon {
     background: #000;
     padding: 10px;
     border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.pdesuptitulo{
+    font-size: .7em;
+    line-height: 2em;
+}
+
+.div-leni-tiempo-semanal>p{
+    font-size: .9em;
+}
+
+.divValorconte{
+    padding: 10px 5px;
+}
+
+.dicIcon i{
+    font-size: 1.3em;
+
+}
+
+.divcontenetodoselectorcolor{
+    display: none;
+}
+
+.semanasDiv button.active{
+    background: #151515;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: .9em;
+    color: #fff;
+    border: none;
+}
+.semanasDiv button{
+    background: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: .9em;
+    color: #fff;
+    border: none;
 }
