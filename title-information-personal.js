@@ -4,7 +4,7 @@
 
 // const informacionAT = '<ul id="ul-title-resumen"><li style="z-index: -1;" class="li-title-resumen"><i class="fa-solid fa-calendar-days iconoTitle"></i></li><li id="titleElemento">Avances físicos</li><li class="li-title-resumen"><i class="fa-regular fa-user iconoTitle"></i></li></ul>'
 
-const containerResumenEvent = document.querySelector('.containerEvento')
+const containerResumenEvent = document.querySelector('body')
 
 
 containerResumenEvent.addEventListener('click', (e) => {
@@ -47,7 +47,5 @@ function titleIR() {
 }
 titleIR()
 const nombre = 'Jesus'
-
-
 
 

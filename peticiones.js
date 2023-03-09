@@ -8439,38 +8439,36 @@ let arrayAyuda = [
 // console.log(arrayInfoBasica.data.nombre)
 
 
-const divContenedorTP = document.querySelector('.titleNombreUser')
-
-const h2TP = document.createElement('h2')
-h2TP.setAttribute("id", "nombreusertitle")
-
-h2TP.innerHTML = arrayInfoBasica.data.nombre + ' ' + arrayInfoBasica.data.apellido
-
-document.querySelector('.spanUser1').innerHTML = ' V-' + arrayInfoBasica.data.dni
-document.querySelector('.spanUser2').innerHTML = ' ' + arrayInfoBasica.data.correo
-if (arrayInfoBasica.data.sexo == 'm') {
-    document.querySelector('.spanUser3').innerHTML = ' Masculino'
-} else {
-    document.querySelector('.spanUser3').innerHTML = ' Femenina'
-}
-document.querySelector('.spanUser4').innerHTML = ' ' + arrayInfoBasica.data.nacimiento.split(" ", 1)
-document.querySelector('.spanUser5').innerHTML = ' ' + ' ' + arrayInfoBasica.data.edad + ' Años'
-document.querySelector('.spanUser6').innerHTML = ' ' + ' ' + arrayInfoBasica.data.talla + '.0 Centimetros'
-document.querySelector('.spanUser7').innerHTML = ' ' + ' ' + arrayInfoBasica.data.fecha_inicio.split(" ", 1)
-document.querySelector('.spanUser8').innerHTML = ' ' + ' ' + arrayInfoBasica.data.semana
-document.querySelector('.spanUser9').innerHTML = ' ' + ' ' + arrayInfoBasica.data.profesion
-
-divContenedorTP.appendChild(h2TP)
-
+    
 
 if (window.location.pathname == '/resumen.html') {
-
-} else if (window.location.pathname == '/inicio.html') {
 
 } else if (window.location.pathname == '/ficha-medica.html') {
 
 
+    const divContenedorTP = document.querySelector('.titleNombreUser')
 
+    const h2TP = document.createElement('h2')
+    h2TP.setAttribute("id", "nombreusertitle")
+    
+    h2TP.innerHTML = arrayInfoBasica.data.nombre + ' ' + arrayInfoBasica.data.apellido
+    
+    document.querySelector('.spanUser1').innerHTML = ' V-' + arrayInfoBasica.data.dni
+    document.querySelector('.spanUser2').innerHTML = ' ' + arrayInfoBasica.data.correo
+    if (arrayInfoBasica.data.sexo == 'm') {
+        document.querySelector('.spanUser3').innerHTML = ' Masculino'
+    } else {
+        document.querySelector('.spanUser3').innerHTML = ' Femenina'
+    }
+    document.querySelector('.spanUser4').innerHTML = ' ' + arrayInfoBasica.data.nacimiento.split(" ", 1)
+    document.querySelector('.spanUser5').innerHTML = ' ' + ' ' + arrayInfoBasica.data.edad + ' Años'
+    document.querySelector('.spanUser6').innerHTML = ' ' + ' ' + arrayInfoBasica.data.talla + '.0 Centimetros'
+    document.querySelector('.spanUser7').innerHTML = ' ' + ' ' + arrayInfoBasica.data.fecha_inicio.split(" ", 1)
+    document.querySelector('.spanUser8').innerHTML = ' ' + ' ' + arrayInfoBasica.data.semana
+    document.querySelector('.spanUser9').innerHTML = ' ' + ' ' + arrayInfoBasica.data.profesion
+    
+    divContenedorTP.appendChild(h2TP)
+    
 
 
 
@@ -14308,9 +14306,7 @@ if (window.location.pathname == '/resumen.html') {
                         body: JSON.stringify({
                             "general": parametro1, "SEMANA": parametro2
                         })
-
                     }
-
 
                     let result = await fetch("https://api.metodovargas.app/patients/v1/record/", options1)
                         .then((E) => E.json())
@@ -14346,7 +14342,6 @@ if (window.location.pathname == '/resumen.html') {
                         body: JSON.stringify({
                             "IMV": parametro1, "SEMANA": parametro2
                         })
-
                     }
 
 
@@ -14357,12 +14352,9 @@ if (window.location.pathname == '/resumen.html') {
                     console.log(result)
                     if (result == true) {
                         window.open("ficha-medica.html", "_self");
-
                     }
-
                     console.log('se hizo la peticion')
                 }
-
                 EnviarValoresMedioAmbientePolitica()
             }
         })
@@ -14370,6 +14362,7 @@ if (window.location.pathname == '/resumen.html') {
 
 
     function enviardatosdelapeticionImv(parametro1) {
+
         peticionesPutsFichamentica('divSCC enviarNivelSundefine', 0, parametro1)
         peticionesPutsFichamentica('divSCC enviarNivelS0', 1, parametro1)
         peticionesPutsFichamentica('divSCC enviarNivelS1', 2, parametro1)
@@ -14386,6 +14379,8 @@ if (window.location.pathname == '/resumen.html') {
 
 
     }
+
+   
 
     console.log(arrayInfoBasica.data.semana)
 
@@ -14449,12 +14444,12 @@ if (window.location.pathname == '/resumen.html') {
                 crearcirculoscolresenv('#ffeb3b', 'enviarNivelS2',)
                 crearcirculoscolresenv('#adff2f', 'enviarNivelS3',)
                 crearcirculoscolresenv('#18aeff', 'enviarNivelS4',)
-                // enviardatosdelapeticionImv(numerodesemana)
+                enviardatosdelapeticionImv(numerodesemana)
             }
         }
 
 
-        function selecopnardprdiv1(parametrodesectordiv, numerodesemana) {
+        function selecopnardprdiv1(parametrodesectordiv) {
 
             if (e.target.className == parametrodesectordiv) {
                 console.log('holaputo')
@@ -14464,12 +14459,11 @@ if (window.location.pathname == '/resumen.html') {
                 crearcirculoscolresenv('#ffeb3b', 'enviarImv2',)
                 crearcirculoscolresenv('#adff2f', 'enviarImv3',)
                 crearcirculoscolresenv('#18aeff', 'enviarImv4',)
-                // enviardatosdelapeticionImv(numerodesemana)
+                enviardatosdelapeticionImv(numerodesemana)
             }
         }
 
 
-        console.log('semanaqwoeiwoeurihw')
         console.log(semanaActualpe)
         selecopnardprdiv('divValorMG niveldesalud2', (semanaActualpe - 1))
         selecopnardprdiv('divValorMG niveldesalud3', 2)
@@ -14914,12 +14908,12 @@ if (window.location.pathname == '/resumen.html') {
                         document.querySelector('#myChart1').remove()
                         document.querySelector('#cambiardegraf').classList.toggle('fa-chart-column')
                         document.querySelector('#cambiardegraf').classList.toggle('fa-chart-line')
-                        crearGraficos1(".div-graficoAvanceSemanal", valoresDeLosDatos, nombreDelgraf, "#40c4fe", 'bar');
+                        crearGraficos1(".div-graficoAvanceSemanal", valoresDeLosDatos, nombreDelgraf, "#40c4fe", 'bar',psuctitulo);
                     } else if (e.target.className == 'fa-solid fa-chart-column') {
                         document.querySelector('#myChart1').remove()
                         document.querySelector('#cambiardegraf').classList.toggle('fa-chart-column')
                         document.querySelector('#cambiardegraf').classList.toggle('fa-chart-line')
-                        crearGraficos1(".div-graficoAvanceSemanal", valoresDeLosDatos, nombreDelgraf, "#40c4fe", 'line');
+                        crearGraficos1(".div-graficoAvanceSemanal", valoresDeLosDatos, nombreDelgraf, "#40c4fe", 'line',psuctitulo);
                     }
 
                 })
@@ -15295,6 +15289,22 @@ try {
 
     crearGraficos(".div-grafico-peso-grasa", arrayInfoBasica.measures.grasab, arrayInfoBasica.measures.peso, "Peso", "Grasa");
 
+    document.querySelector('#desplegueuser').addEventListener('click', (e)=>{
+        console.log(e.target.id)
+        if( e.target.className == 'fa-solid fa-chevron-down despliegue1'){
+            document.querySelector('#desplegueuser').classList.toggle('despliegue1')
+            document.querySelector('#desplegueuser').classList.toggle('despliegue2')
+            document.querySelector('#desplegueuser').style.transform = 'rotate(0deg)'
+            document.querySelector('#desplegueuser').style.color = '#000'
+            document.querySelector('.contenedordeplegable').style.display = 'none'     
+        }else if( e.target.className == 'fa-solid fa-chevron-down despliegue2'){
+            document.querySelector('#desplegueuser').classList.toggle('despliegue1')
+            document.querySelector('#desplegueuser').classList.toggle('despliegue2')
+            document.querySelector('#desplegueuser').style.transform = 'rotate(180deg)'
+            document.querySelector('#desplegueuser').style.color = '#1f3ff3'
+            document.querySelector('.contenedordeplegable').style.display = 'block'     
+        }
+    })
 
 
 
@@ -15306,10 +15316,173 @@ try {
 
 
 
+} else if (window.location.pathname == '/documetoCarpetas.html') {
 
-} else if (window.location.pathname == '/carpetas.html') {
+    const carpetapetioaary = [
+        {
+            "id": 1,
+            "id_usuario": 2,
+            "nombre": "zapatos",
+            "estado": 1,
+            "fecha_r": "2022-05-13 00:00:00",
+            "total": 8
+        },
+        {
+            "id": 2,
+            "id_usuario": 2,
+            "nombre": "hh",
+            "estado": 1,
+            "fecha_r": "2022-05-13 00:00:00",
+            "total": 1
+        },
+        {
+            "id": 10,
+            "id_usuario": 2,
+            "nombre": "cara lateral",
+            "estado": 1,
+            "fecha_r": "2022-05-15 00:00:00",
+            "total": 2
+        },
+        {
+            "id": 11,
+            "id_usuario": 2,
+            "nombre": "cara de frente",
+            "estado": 1,
+            "fecha_r": "2022-05-15 00:00:00",
+            "total": 3
+        },
+        {
+            "id": 12,
+            "id_usuario": 2,
+            "nombre": "abdomen lateral",
+            "estado": 1,
+            "fecha_r": "2022-05-15 00:00:00",
+            "total": 0
+        },
+        {
+            "id": 13,
+            "id_usuario": 2,
+            "nombre": "abdomen de frente",
+            "estado": 1,
+            "fecha_r": "2022-05-15 00:00:00",
+            "total": 0
+        },
+        {
+            "id": 14,
+            "id_usuario": 2,
+            "nombre": "cadera lateral",
+            "estado": 1,
+            "fecha_r": "2022-05-15 00:00:00",
+            "total": 0
+        },
+        {
+            "id": 15,
+            "id_usuario": 2,
+            "nombre": "cadera de frente",
+            "estado": 1,
+            "fecha_r": "2022-05-15 00:00:00",
+            "total": 0
+        },
+        {
+            "id": 16,
+            "id_usuario": 2,
+            "nombre": "brazos",
+            "estado": 1,
+            "fecha_r": "2022-05-15 00:00:00",
+            "total": 1
+        },
+        {
+            "id": 118,
+            "id_usuario": 2,
+            "nombre": "laboratorio ",
+            "estado": 1,
+            "fecha_r": "2022-06-22 00:00:00",
+            "total": 3
+        },
+        {
+            "id": 203,
+            "id_usuario": 2,
+            "nombre": " historia",
+            "estado": 1,
+            "fecha_r": "2022-07-06 00:00:00",
+            "total": 0
+        }
+    ]
+
+
+
+    console.log(carpetapetioaary)
+
+
+    carpetapetioaary.forEach(e => {
+
+
+        let contenedorayu = document.querySelector('.Contenedorcarpeta')
+        var Divcart = document.createElement('div')
+        Divcart.classList.add('carpeta')
+        Divcart.classList.add('item')
+        var imgcar = document.createElement('img')
+        imgcar.classList.add('id'+ e.id)
+        var labelcar = document.createElement('label')
+        var pcar = document.createElement('p')
+        labelcar.classList.add('nombres')
+
+        imgcar.src = 'carpeta.png'
+        labelcar.textContent = e.nombre
+        pcar.textContent = e.total + ' Archivos'
+
+        Divcart.appendChild(imgcar);
+        Divcart.appendChild(labelcar);
+        Divcart.appendChild(pcar);
+        contenedorayu.appendChild(Divcart);
+
+        console.log(e.nombre)
+
+    });
+
+    document.querySelector('body').addEventListener('click', (e)=>{
+        console.log(e.target.className)
+        if(e.target.className == 'fa-solid fa-bars'){
+            document.querySelector('#cambiarformcar').classList.toggle('fa-bars')
+            document.querySelector('#cambiarformcar').classList.toggle('fa-border-all')
+            document.querySelector('.Contenedorcarpeta').style.display = 'inline-block'
+
+        }else if(e.target.className == 'fa-solid fa-border-all'){
+            document.querySelector('#cambiarformcar').classList.toggle('fa-bars')
+            document.querySelector('#cambiarformcar').classList.toggle('fa-border-all')
+            document.querySelector('.Contenedorcarpeta').style.display = 'flex'
+        }
+    })
+
+
+
+
+
 
 } else if (window.location.pathname == '/notas-para-ti.html') {
+
+    const divContenedorTP = document.querySelector('.titleNombreUser')
+
+    const h2TP = document.createElement('h2')
+    h2TP.setAttribute("id", "nombreusertitle")
+    
+    h2TP.innerHTML = arrayInfoBasica.data.nombre + ' ' + arrayInfoBasica.data.apellido
+    
+    document.querySelector('.spanUser1').innerHTML = ' V-' + arrayInfoBasica.data.dni
+    document.querySelector('.spanUser2').innerHTML = ' ' + arrayInfoBasica.data.correo
+    if (arrayInfoBasica.data.sexo == 'm') {
+        document.querySelector('.spanUser3').innerHTML = ' Masculino'
+    } else {
+        document.querySelector('.spanUser3').innerHTML = ' Femenina'
+    }
+    document.querySelector('.spanUser4').innerHTML = ' ' + arrayInfoBasica.data.nacimiento.split(" ", 1)
+    document.querySelector('.spanUser5').innerHTML = ' ' + ' ' + arrayInfoBasica.data.edad + ' Años'
+    document.querySelector('.spanUser6').innerHTML = ' ' + ' ' + arrayInfoBasica.data.talla + '.0 Centimetros'
+    document.querySelector('.spanUser7').innerHTML = ' ' + ' ' + arrayInfoBasica.data.fecha_inicio.split(" ", 1)
+    document.querySelector('.spanUser8').innerHTML = ' ' + ' ' + arrayInfoBasica.data.semana
+    document.querySelector('.spanUser9').innerHTML = ' ' + ' ' + arrayInfoBasica.data.profesion
+    
+    divContenedorTP.appendChild(h2TP)
     arrayNotas.forEach(e => {
         console.log(e)
 
@@ -15346,9 +15519,66 @@ try {
         console.log(arraymensajeNotas)
         console.log(arrayTituloNotas)
     })
-} else if (window.location.pathname == '/avances-fisicos.html') {
+} else if (window.location.pathname == '/infoUser.html') {
+document.querySelector('.continerInfoUser ').style.display = 'block'
+document.querySelector('.continerInfoUser ').style.position = 'relative'
+document.querySelector('.continerInfoUser ').style.height = '100%'
+
+const divContenedorTP = document.querySelector('.titleNombreUser')
+
+    const h2TP = document.createElement('h2')
+    h2TP.setAttribute("id", "nombreusertitle")
+    
+    h2TP.innerHTML = arrayInfoBasica.data.nombre + ' ' + arrayInfoBasica.data.apellido
+    
+    document.querySelector('.spanUser1').innerHTML = ' V-' + arrayInfoBasica.data.dni
+    document.querySelector('.spanUser2').innerHTML = ' ' + arrayInfoBasica.data.correo
+    if (arrayInfoBasica.data.sexo == 'm') {
+        document.querySelector('.spanUser3').innerHTML = ' Masculino'
+    } else {
+        document.querySelector('.spanUser3').innerHTML = ' Femenina'
+    }
+    document.querySelector('.spanUser4').innerHTML = ' ' + arrayInfoBasica.data.nacimiento.split(" ", 1)
+    document.querySelector('.spanUser5').innerHTML = ' ' + ' ' + arrayInfoBasica.data.edad + ' Años'
+    document.querySelector('.spanUser6').innerHTML = ' ' + ' ' + arrayInfoBasica.data.talla + '.0 Centimetros'
+    document.querySelector('.spanUser7').innerHTML = ' ' + ' ' + arrayInfoBasica.data.fecha_inicio.split(" ", 1)
+    document.querySelector('.spanUser8').innerHTML = ' ' + ' ' + arrayInfoBasica.data.semana
+    document.querySelector('.spanUser9').innerHTML = ' ' + ' ' + arrayInfoBasica.data.profesion
+    
+    divContenedorTP.appendChild(h2TP)
+    
+
+document.querySelector('#desplegueuser').addEventListener('click', (e)=>{
+    console.log(e.target.id)
+    if( e.target.className == 'fa-solid fa-chevron-down despliegue1'){
+        document.querySelector('#desplegueuser').classList.toggle('despliegue1')
+        document.querySelector('#desplegueuser').classList.toggle('despliegue2')
+        document.querySelector('#desplegueuser').style.transform = 'rotate(0deg)'
+        document.querySelector('#desplegueuser').style.color = '#000'
+        document.querySelector('.contenedordeplegable').style.display = 'none'     
+    }else if( e.target.className == 'fa-solid fa-chevron-down despliegue2'){
+        document.querySelector('#desplegueuser').classList.toggle('despliegue1')
+        document.querySelector('#desplegueuser').classList.toggle('despliegue2')
+        document.querySelector('#desplegueuser').style.transform = 'rotate(180deg)'
+        document.querySelector('#desplegueuser').style.color = '#1f3ff3'
+        document.querySelector('.contenedordeplegable').style.display = 'block'     
+    }
+})
 
 }
 
 
+document.querySelector('body').addEventListener('click', (e) => {
+
+    if (e.target.className == 'documentCarpetas' ||e.target.className == 'documentos' ) {
+        window.open("documetoCarpetas.html", "_self");
+    
+    }
+    if (e.target.className == 'fa-solid fa-angle-left' ) {
+        window. history. back();
+    
+    }
+
+
+})
 // }

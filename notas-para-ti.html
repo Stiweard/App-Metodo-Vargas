@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilosGenerales.css">
     <link rel="stylesheet" href="title-information-personal.css">
+    <link rel="stylesheet" href="ficha.css">
 
 </head>
 
@@ -48,29 +49,52 @@
     </div>
     <div class="continerInfoUser">
         <div class="flechaTitle">
-            <i class="fa-solid fa-chevron-left iconFleUserback"></i>
-            <h2 id="titleInfoUser">Informacion personal</h2>
-            <i class="fa-solid fa-chevron-left iconFleUserback1"></i>
+            <div class="titleNombreUser"></div>
 
         </div>
-        <div class="titleNombreUser">
+        <div class="contedor-infopdec">
+
+            <div class="titleInfoUser">
+                <p>Información personal</p>
+                <i class="fa-solid fa-chevron-down despliegue1" id="desplegueuser"></i>
+            </div>
+            <div class="contenedordeplegable">
+                <div class="div-flex-Info-pers">
+                    <div class="contenidoInformacionUser">
+                        <p class="infoUserContent">Número de documento:<span
+                                class="contentUserSpan spanUser1"></span></p>
+                        <p class="infoUserContent">Correo:<span class="contentUserSpan spanUser2"></span></p>
+                        <p class="infoUserContent">Sexo:<span class="contentUserSpan spanUser3"></span></p>
+                        <p class="infoUserContent">Fecha de macimiento:<span
+                                class="contentUserSpan spanUser4"></span></p>
+                        <p class="infoUserContent">Edad:<span class="contentUserSpan spanUser5"></span></p>
+                        <p class="infoUserContent">Altura:<span class="contentUserSpan spanUser6"></span></p>
+                        <p class="infoUserContent">Fecha de inicio:<span class="contentUserSpan spanUser7"></span>
+                        </p>
+                        <p class="infoUserContent">Semana actual:<span class="contentUserSpan spanUser8"></span></p>
+                        <p class="infoUserContent">Profeción:<span class="contentUserSpan spanUser9"></span></p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-        <div class="div-flex-Info-pers">
-            <div class="contenidoInformacionUser">
-                <p class="infoUserContent">Número de documento:<span class="contentUserSpan spanUser1"></span></p>
-                <p class="infoUserContent">Correo:<span class="contentUserSpan spanUser2"></span></p>
-                <p class="infoUserContent">Sexo:<span class="contentUserSpan spanUser3"></span></p>
-                <p class="infoUserContent">Fecha de macimiento:<span class="contentUserSpan spanUser4"></span></p>
-                <p class="infoUserContent">Edad:<span class="contentUserSpan spanUser5"></span></p>
-                <p class="infoUserContent">Altura:<span class="contentUserSpan spanUser6"></span></p>
-                <p class="infoUserContent">Fecha de inicio:<span class="contentUserSpan spanUser7"></span></p>
-                <p class="infoUserContent">Semana actual:<span class="contentUserSpan spanUser8"></span></p>
-                <p class="infoUserContent">Profeción:<span class="contentUserSpan spanUser9"></span></p>
+        <div class="contenedor-documentos-fotos-semanales">
+            <div class="documentos">
+                <p class="documentCarpetas">Documentos</p><i class="fa-regular fa-file-lines"></i>
+            </div>
+            <div class="fotos-semanales">
+                <p>Fotos semanales</p><i class="fa-regular fa-image"></i>
             </div>
         </div>
-        <div class="containerBotonsecion blurBotonC"><button id="botonSecion"> cerrar secion</button></div>
-        <div class="containerBotonsecion"><button id="botonSecion"> cerrar secion</button></div>
+
+        <div class="contenedor-btn-cerrsesion">
+            <button class="shadow__btn">
+                cerrar secion
+            </button>
+        </div>
     </div>
+
     <!-- peticiones -->
     <script src="peticiones.js"></script>
     <!-- icono Font Awesome -->
